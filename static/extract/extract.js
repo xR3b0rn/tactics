@@ -2,7 +2,6 @@
 
 const vm = require('vm');
 const htmlparser = require('htmlparser');
-const beautify = require('js-beautify').js;
 const fs = require('fs');
 
 var canvas_js;
