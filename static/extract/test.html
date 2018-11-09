@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+  <title>rotated text using transform vs blit from offscreen</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <style>
+    html, body { height: 100% }
+    body { display: flex; align-items: center; justify-content: center; }
+    canvas { border: 1px solid #ccc; display: block; }
+  </style>
+</head>
+<body>
+  <canvas id="main"></canvas>
+  <script>
+    // setup
+    var canvas = document.getElementById('main');
+    var context = canvas.getContext('2d');
+
+    $.getJSON('units/cleric.min.json').then(run_animation);
+
+    function run_animation(data) {
+      canvas.width = data.width;
+      canvas.height = data.height;
+
+      // First load all the images.
+      data.images.forEach((src, i) => {
+        let image = new Image();
+        image.src = src;
+
+        data.images[i] = image;
+      });
+
+      // Expand shape data for efficient animation.
+      data.frames.forEach(frame => {
+        frame.forEach(shape => {
+          if ('scale' in shape) {
+            shape.scale_x = shape.scale_y = shape.scale;
+          }
+          else {
+            if (!('scale_x' in shape)) shape.scale_x = 1;
+            if (!('scale_y' in shape)) shape.scale_y = 1;
+          }
+
+          if ('skew' in shape) {
+            shape.skew_x = shape.skew_y = shape.skew;
+          }
+          else {
+            if (!('skew_x' in shape)) shape.skew_x = 0;
+            if (!('skew_y' in shape)) shape.skew_y = 0;
+          }
+
+          if (!('x' in shape)) shape.x = 0;
+          if (!('y' in shape)) shape.y = 0;
+
+          if ('image' in shape)
+            shape.image = data.images[shape.image];
+        });
+      });
+
+      // Run the animation once all images are loaded.
+      let index = 0;
+      setInterval(() => render_frame(data, index++), 83);
+    }
+
+    function render_frame (data, index) {
+      index = index % data.frames.length;
+
+      context.fillStyle = '#DDDDDD';
+      context.fillRect(0, 0, data.width, data.height);
+
+      data.frames[index].forEach(shape => {
+        context.save();
+        context.transform(shape.scale_y, shape.skew_y, shape.skew_x, shape.scale_x, shape.x, shape.y);
+
+        if ('image' in shape) {
+          context.fillStyle = context.createPattern(shape.image, 'no-repeat');
+          context.fillRect(0, 0, data.width, data.height);
+        }
+
+        context.restore();
+      });
+    }
+  </script>
+</body>
+</html>
