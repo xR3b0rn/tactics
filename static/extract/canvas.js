@@ -859,6 +859,7 @@ var cxform = function (r_add, g_add, b_add, a_add, r_mult, g_mult, b_mult, a_mul
         if (this.isEmpty()) {
             return fimg
         }
+        /* MOCKING THIS
         ;
         var icanvas = createCanvas(fimg.width, fimg.height);
         var ictx = icanvas.getContext("2d");
@@ -874,6 +875,9 @@ var cxform = function (r_add, g_add, b_add, a_add, r_mult, g_mult, b_mult, a_mul
         }
         ictx.putImageData(imdata, 0, 0);
         return icanvas;
+        */
+        fimg.color = this;
+        return fimg;
     };
     this.merge = function (cx) {
         return new cxform(this.r_add + cx.r_add, this.g_add + cx.g_add, this.b_add + cx.b_add, this.a_add + cx.a_add, this.r_mult * cx.r_mult / 255, this.g_mult * cx.g_mult / 255, this.b_mult * cx.b_mult / 255, this.a_mult * cx.a_mult / 255);

@@ -14,8 +14,9 @@
   "author": "Dave Clark",
   "license": "Unlicense",
   "devDependencies": {
+    "canvas": "^2.1.0",
     "css-loader": "^1.0.0",
-    "htmlparser": "^1.7.7",
+    "jsdom": "^13.0.0",
     "node-sass": "^4.9.4",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",

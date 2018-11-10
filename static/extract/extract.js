@@ -1,9 +1,12 @@
 'use strict';
 
+const path = require('path');
 const vm = require('vm');
-const htmlparser = require('htmlparser');
 const fs = require('fs');
 const assert = require('assert');
+
+const JSDOM = require('jsdom').JSDOM;
+const Image = require('canvas').Image;
 
 var html_file;
 var file_prefix;
@@ -31,29 +34,41 @@ var extracted = {
 };
 var frame_count = null;
 
-fs.readFile('canvas.js', 'utf8', (err, data) => {
-  if (err) throw err;
+var html = fs.readFileSync(html_file);
+var dom = new JSDOM(html);
+var scripts = [];
 
-  canvas_js = data;
+Array.from(dom.window.document.scripts).forEach(script => {
+  if (script.src) {
+    if (!(/^https?:/.test(script.src))) {
+      let src = path.resolve(path.relative(path.dirname(html_file), script.src));
+      scripts.push(fs.readFileSync(src));
+    }
+  }
+  else {
+    scripts.push(script.innerHTML);
+  }
 });
 
-fs.readFile('cleric.html', 'utf8', (err, data) => {
-  if (err) throw err;
+scripts.push("window.postMessage({type:'frame_count',value:frames.length});");
 
-  var handler = new htmlparser.DefaultHandler((error, dom) => {
-    if (error) throw error;
-  });
-  var parser = new htmlparser.Parser(handler);
-  parser.parseComplete(data);
+vm.runInNewContext(scripts.join(';'), {
+  window: mock_window(dom),
+  document: mock_document(dom),
+  Image: Image,
+  setTimeout: (callback, timeout) => {
+    var id = setTimeout(() => {
+      if (extracted.frames.length === frame_count) {
+        clearTimeout(id);
+        return export_extracted();
+      }
 
-  var js = handler.dom[2].children[2].children[3].children[0].raw;
-  var post = "window.postMessage({type:'frame_count',value:frames.length});";
+      callback();
+    }, timeout);
 
-  vm.runInNewContext(canvas_js+';'+js+';'+post, {
-    window: mock_window(),
-    document: mock_document(handler.dom),
-  }, 'vm.js');
-});
+    return id;
+  },
+}, 'vm.js');
 
 function makeMockObject(id, handler) {
   handler.__proxy__ = id;
@@ -117,6 +132,18 @@ function mock_window() {
 
       return id;
     },
+    setTimeout: (callback, timeout) => {
+      var id = setTimeout(() => {
+        if (extracted.frames.length === frame_count) {
+          clearTimeout(id);
+          return export_extracted();
+        }
+
+        callback();
+      }, timeout);
+
+      return id;
+    },
     postMessage: (message, targetOrigin, transfer) => {
       if (message.type === 'frame_count')
         frame_count = message.value;
@@ -128,66 +155,40 @@ function mock_window() {
 
 function mock_document(dom) {
   return makeMockObject('document', {
+    get body() {
+      return dom.window.document.body;
+    },
     getElementById: id => {
-      if (id === 'myCanvas') {
-        var element = dom[2].children[2].children[1].children[0];
-
+      var element = dom.window.document.getElementById(id);
+      if (element.tagName === 'CANVAS') {
         return makeMockObject('#myCanvas', {
           get width() {
-            return parseInt(element.attribs.width);
+            return element.width;
           },
           get height() {
-            return parseInt(element.attribs.height);
+            return element.height;
           },
-          getContext: () => mock_canvas_context('#myCanvas.context'),
+          getContext: () => mock_canvas_context(dom, '#myCanvas.context'),
         });
       }
-      else if (id === 'width_size') {
-        var element = dom[2].children[2].children[1].children[1];
-        return makeMockObject('#width_size', {
-          addEventListener: (type, callback) => {
-            //console.log('#width_size.addEventListener', type, callback);
-            return makeMockObject("#width_size.addEventListener('load', ...)", {});
-          },
-        });
-      }
-      else if (id === 'height_size') {
-        var element = dom[2].children[2].children[1].children[1];
-        return makeMockObject('#height_size', {
-          addEventListener: (type, callback) => {
-            //console.log('#height_size.addEventListener', type, callback);
-            return makeMockObject("#height_size.addEventListener('load', ...)", {});
-          },
-        });
-      }
-
-      throw new Error("document.getElementById('"+id+"')");
+      //console.log("document.getElementById('"+id+"')");
+      return dom.window.document.getElementById(id);
     },
     createElement: tagName => {
-      if (tagName === 'img') {
-        return makeMockObject("document.createElement('img')", {
-          get src() {
-            return this._src;
-          },
-          set src(value) {
-            assert(extracted.images.indexOf(value) === -1);
-            extracted.images.push(value);
+      if (tagName === 'img')
+        return dom.window.document.createElement(tagName);
+      if (tagName === 'canvas')
+        return dom.window.document.createElement(tagName);
 
-            //console.log("document.createElement('img')", 'set', prop, value);
-            return this._src = value;
-          },
-        });
-      }
-      console.log('document.createElement', tagName);
-      return makeMockObject("document.createElement('"+tagName+"')", {});
+      throw new Error('Unsupported createElement: '+tagName);
     },
   });
 }
 
-function mock_canvas_context(id) {
+function mock_canvas_context(dom, id) {
   // Core context prototype
   var context = {};
-  
+
   context.__proto__ = makeMockObject(id, {
     _stack: [],
     _transform: [1, 0, 0, 1, 0, 0],
@@ -213,12 +214,12 @@ function mock_canvas_context(id) {
     },
 
     transform: function (sx, rx, ry, sy, tx, ty) {
-      //console.log(id, 'transform', sx, rx, ry, sy, tx, ty);
+      console.log(id, 'transform', sx, rx, ry, sy, tx, ty);
       this._transform = multiply_transform([sx, rx, ry, sy, tx, ty], this._transform);
     },
     createPattern: function (image, repetition) {
       //console.log(id, 'createPattern', image.src, repetition);
-      return {src: image.src};
+      return image;
     },
     set fillStyle(value) {
       //console.log(id, 'set', 'fillStyle', value);
@@ -240,31 +241,79 @@ function mock_canvas_context(id) {
         };
 
         [...this._stack, current_item].forEach(item => {
-          //console.log(transform, 'x', item.transform, '=', multiply_transform(item.transform, transform));
+          console.log(transform, 'x', item.transform, '=', multiply_transform(item.transform, transform));
           transform = multiply_transform(item.transform, transform);
         });
 
         // Adjust the transform to round the scaling to 2 decimal places.
-        var sx = 1 / transform[0];
-        var sy = 1 / transform[3];
+        var sx = Math.abs(1 / transform[0]);
+        var sy = Math.abs(1 / transform[3]);
+        console.log(transform, sx, sy);
         transform = multiply_transform([sx, 0, 0, sy, 0, 0], transform);
+        console.log(transform);
 
         // Only so much precision matters
         transform[0] = transform[0].toFixed(2) * 1;
         transform[3] = transform[3].toFixed(2) * 1;
         transform[4] = transform[4].toFixed(0) * 1;
         transform[5] = transform[5].toFixed(0) * 1;
+        console.log(transform);
 
         var shape = {};
+        var fillStyle = this._fillStyle;
 
-        if (typeof(this._fillStyle) === 'object') {
-          if ('src' in this._fillStyle)
-            shape.image = extracted.images.indexOf(this._fillStyle.src);
+        if (typeof(fillStyle) === 'object') {
+          if (fillStyle instanceof Image) {
+            let src = fillStyle.src;
+            let index = extracted.images.indexOf(src);
+
+            if (index === -1) {
+              extracted.images.push(src);
+              shape.image = extracted.images.length-1;
+            }
+            else {
+              shape.image = index;
+            }
+
+            if ('color' in fillStyle) {
+              let color = fillStyle.color;
+
+              if (color.g_mult === 0 && color.b_mult === 0) {
+                color.g_mult = 255;
+                color.b_mult = 255;
+                if (color.isEmpty())
+                  shape.trim = true;
+                else {
+                  color.g_mult = 0;
+                  color.b_mult = 0;
+                }
+              }
+
+              if (!(color.isEmpty())) {
+                shape.color = {};
+                if (color.r_add !== 0)    shape.color.ra = color.r_add;
+                if (color.g_add !== 0)    shape.color.ga = color.g_add;
+                if (color.b_add !== 0)    shape.color.ba = color.b_add;
+                if (color.a_add !== 0)    shape.color.aa = color.a_add;
+                if (color.r_mult !== 255) shape.color.ra = color.r_mult;
+                if (color.g_mult !== 255) shape.color.ga = color.g_mult;
+                if (color.b_mult !== 255) shape.color.ba = color.b_mult;
+                if (color.a_mult !== 255) shape.color.aa = color.a_mult;
+              }
+            }
+          }
+          else if (fillStyle instanceof dom.window.HTMLElement) {
+            if (fillStyle.tagName === 'CANVAS') {
+              throw new Error('Unsupported fillStyle Canvas');
+            }
+            else
+              throw new Error('Unsupported fillStyle Element');
+          }
           else
-            throw new Error('Unsupported fillStyle', this._fillStyle);
+            throw new Error('Unsupported fillStyle');
         }
         else {
-          throw new Error('Unsupported fillStyle', this._fillStyle);
+          throw new Error('Unsupported fillStyle');
         }
 
         if (transform[0] === transform[3]) {
@@ -350,7 +399,7 @@ function multiply_transform(m1, m2) {
 
 function export_extracted() {
   fs.writeFileSync('units/'+file_prefix+'.min.json', JSON.stringify(extracted));
-  console.log('Wrote '+file_prefix+'.min.json');
+  console.log('Wrote units/'+file_prefix+'.min.json');
   fs.writeFileSync('units/'+file_prefix+'.json', JSON.stringify(extracted, null, 2));
-  console.log('Wrote '+file_prefix+'.json');
+  console.log('Wrote units/'+file_prefix+'.json');
 }
