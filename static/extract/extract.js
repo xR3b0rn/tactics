@@ -310,8 +310,11 @@ function mock_canvas_context(dom, canvas, id) {
       }
       else {
         let frame = extracted.frames[extracted.frames.length-1];
-        var transform = [1, 0, 0, 1, 0, 0];
-        var current_item = {
+        if (frame === undefined)
+          extracted.frames.push(frame = []);
+
+        let transform = [1, 0, 0, 1, 0, 0];
+        let current_item = {
           transform: this._transform,
         };
 
@@ -491,12 +494,7 @@ function export_extracted() {
   js += "canvas = document.getElementById('"+transcript.canvasId+"');\n";
   js += 'originalWidth = canvas.width;\n';
   js += 'originalHeight = canvas.height;\n';
-  js += "context = canvas.getContext('2d');\n";
-
-  if (transcript.setup.length)
-    js += transcript.setup.join('\n')+'\n\n';
-  else
-    js += '\n';
+  js += "context = canvas.getContext('2d');\n\n";
 
   js += 'let frame_index = 0;\n';
   js += 'function drawFrame() {\n';
@@ -527,8 +525,9 @@ function print_transcript() {
     format = format.replace('%s', arg);
   });
 
-  if (transcript.frames.length)
-    transcript.frames[transcript.frames.length-1].push(format);
-  else
-    transcript.setup.push(format);
+  let frame = transcript.frames[transcript.frames.length-1];
+  if (frame === undefined)
+    transcript.frames.push(frame = []);
+
+  frame.push(format);
 }
