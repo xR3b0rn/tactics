@@ -30,7 +30,4 @@ const drawFrame = () => {
     ctx.restore();
 };
 
-(function render() {
-    nextFrame();
-    setTimeout(render, 83);
-})();
+window.setInterval(nextFrame, 83);
