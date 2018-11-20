@@ -5,7 +5,7 @@ context = canvas.getContext('2d');
 
 let frame_index = 0;
 function drawFrame() {
-  frame_index = frame_index === 4 ? 0 : frame_index + 1;
+  frame_index = frame_index === 3 ? 0 : frame_index + 1;
 
   switch (frame_index) {
   case 0:
@@ -329,16 +329,6 @@ function drawFrame() {
     context.fillRect(-16384, -16384, 32768, 32768);
     context.restore();
     context.restore();
-    context.restore();
-    context.restore();
-    break;
-  case 4:
-    context.fillStyle = '#000000';
-    context.fillRect(0, 0, 123, 86);
-    context.save();
-    context.transform(1, 0, 0, 1, 0, 0);
-    context.save();
-    context.transform(1, 0, 0, 1, 61.9, 81);
     context.restore();
     context.restore();
     break;

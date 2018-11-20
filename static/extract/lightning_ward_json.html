@@ -17,7 +17,7 @@
     var canvas = document.getElementById('main');
     var context = canvas.getContext('2d');
 
-    $.getJSON('extracted/cleric.min.json').then(run_animation);
+    $.getJSON('extracted/lightning_ward.min.json').then(run_animation);
 
     function run_animation(data) {
       canvas.width = data.width;

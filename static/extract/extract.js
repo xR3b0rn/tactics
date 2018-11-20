@@ -10,21 +10,35 @@ const CanvasGradient = require('canvas').CanvasGradient;
 const CanvasPattern = require('canvas').CanvasPattern;
 const Image = require('canvas').Image;
 
-var html_file;
+var files = [];
 var file_prefix;
+var unit_mode = false;
 
-if (process.argv.length === 3) {
-  html_file = process.argv[2];
+if (process.argv.length === 3 || process.argv.length === 4) {
+  for (let i = 2; i < process.argv.length; i++) {
+    let filename = process.argv[i];
+    if (!/\.html$/.test(filename))
+      throw new Error("Each HTML file is expected to end in '.html'");
 
-  if (/\.html$/.test(html_file)) {
-    file_prefix = html_file.replace(/\.html$/, '');
+    files.push(filename);
   }
-  else {
-    throw new Error("The HTML file is expected to end in '.html'");
-  }
+
+  if (process.argv.length === 4)
+    unit_mode = true;
+
+  file_prefix = files[0]
+    .replace(path.dirname(files[0]), '')
+    .replace(/^[\/\\]/, '')
+    .replace(/\.html$/, '');
 }
 else {
-  throw new Error('Expected one argument to indicate the HTML file to parse.');
+  process.stderr.write('\n');
+  process.stderr.write('Usage: node extract.js <html_file>[, ...]\n');
+  process.stderr.write('  To extract a special effect, simply pass in the HTML file:\n');
+  process.stderr.write('    Example: node extract.js die.html\n');
+  process.stderr.write('  To extract a unit, make sure to pass the shadow file last.\n');
+  process.stderr.write('    Example: node extract.js assassin.html assassin_shadow.html\n');
+  process.exit(1);
 }
 
 var canvas_js;
@@ -38,42 +52,37 @@ var transcript = {
   images: [],
   setup: [],
   frames: [],
+  shadow: [],
 };
+var frame_index = -1;
 var frame_count = null;
+var patternId = 0;
+var gradientId = 0;
 
-var html = fs.readFileSync(html_file);
-var dom = new JSDOM(html);
-var scripts = [];
+// Determine the offset for the main unit file and use it for shadow sprites.
+var offset;
 
-Array.from(dom.window.document.scripts).forEach(script => {
-  if (script.src) {
-    if (!(/^https?:/.test(script.src))) {
-      let src = path.resolve(path.relative(path.dirname(html_file), script.src));
-      scripts.push(fs.readFileSync(src));
-    }
+var next_frame = (callback) => {
+  frame_index++;
+
+  if (frame_index === frame_count)
+    return false;
+
+  if (frame_index === extracted.frames.length) {
+    extracted.frames.push([]);
+    transcript.frames.push([]);
   }
-  else {
-    scripts.push(script.innerHTML);
-  }
-});
 
-// Inject a little bit of JavaScript to extract the frame count.
-scripts.push("window.postMessage({type:'frame_count',value:frames.length});");
+  callback();
+};
 
 /*
  * Calls to setTimeout() or setInterval() are intercepted to detect frame changes.
  */
 var mock_timeout = (callback, timeout) => {
   let id = setTimeout(() => {
-    if (extracted.frames.length === frame_count) {
+    if (next_frame(callback) === false)
       clearTimeout(id);
-      return export_extracted();
-    }
-
-    transcript.frames.push([]);
-    extracted.frames.push([]);
-
-    callback();
   }, 1);
 
   return id;
@@ -81,26 +90,65 @@ var mock_timeout = (callback, timeout) => {
 
 var mock_interval = (callback, interval) => {
   let id = setInterval(() => {
-    if (extracted.frames.length === frame_count) {
+    if (next_frame(callback) === false)
       clearInterval(id);
-      return export_extracted();
-    }
-
-    transcript.frames.push([]);
-    extracted.frames.push([]);
-
-    callback();
   }, 1);
 
   return id;
 };
 
-vm.runInNewContext(scripts.join(';'), {
-  window: mock_window(dom),
-  document: mock_document(dom),
-  Image: Image,
-  setTimeout: mock_timeout,
-}, 'vm.js');
+/*
+ * Wait for each file to finish extraction before proceeding to the next.
+ * Once all files are finished, export extracted.
+ */
+files.reduce(
+  (promise, file) => promise.then(() => extract(file)),
+  Promise.resolve(),
+).then(() => export_extracted());
+
+function extract(file) {
+  var html = fs.readFileSync(file);
+  var dom = new JSDOM(html);
+  var scripts = [];
+
+  if (unit_mode && frame_index > -1)
+    unit_mode = 'shadow';
+
+  // This line ensures additional frame data are added to existing frames.
+  frame_index = -1;
+
+  Array.from(dom.window.document.scripts).forEach(script => {
+    if (script.src) {
+      if (!(/^https?:/.test(script.src))) {
+        let src = path.resolve(path.dirname(file), script.src);
+        scripts.push(fs.readFileSync(src));
+      }
+    }
+    else {
+      scripts.push(script.innerHTML);
+    }
+  });
+
+  // Inject a little bit of JavaScript to extract the frame count.
+  scripts.push("window.postMessage({type:'frame_count',value:frames.length});");
+
+  return new Promise((resolve, reject) => {
+    vm.runInNewContext(scripts.join(';'), {
+      window: mock_window(dom),
+      document: mock_document(dom),
+      Image: Image,
+      setTimeout: mock_timeout,
+    }, file);
+
+    // Wait for execution to stop before resolving the promise.
+    let id = setInterval(() => {
+      if (frame_index === frame_count) {
+        clearInterval(id);
+        resolve();
+      }
+    }, 1000);
+  });
+}
 
 function makeMockObject(id, handler) {
   handler.__proxy__ = id;
@@ -205,9 +253,6 @@ function mock_document(dom) {
 function mock_canvas_context(dom, canvas, id) {
   var context = canvas.getContext("2d");
   var mock = {};
-  var imageId = 0;
-  var patternId = 0;
-  var gradientId = 0;
 
   mock.__proto__ = makeMockObject(id, {
     _stack: [],
@@ -240,19 +285,46 @@ function mock_canvas_context(dom, canvas, id) {
     },
 
     transform: function (sx, rx, ry, sy, tx, ty) {
-      print_transcript('%s.transform(%s, %s, %s, %s, %s, %s);', id, sx, rx, ry, sy, tx, ty);
-      this._transform = multiply_transform([sx, rx, ry, sy, tx, ty], this._transform);
+      let transform = [sx, rx, ry, sy, tx, ty];
+
+      if (unit_mode)
+        // The shadow offset must be the same as the base/trim offset
+        if (sx === 1 && rx === 0 && ry === 0 && sy === 1 && (tx !== 0 || ty !== 0))
+          if (offset) {
+            if (unit_mode === 'shadow') {
+              print_transcript('\/\/%s.transform(%s, %s, %s, %s, %s, %s);', id, ...transform);
+              transform = offset;
+            }
+          }
+          else
+            offset = transform;
+
+      print_transcript('%s.transform(%s, %s, %s, %s, %s, %s);', id, ...transform);
+      this._transform = multiply_transform(transform, this._transform);
+      context.transform(...transform);
     },
     createPattern: function (image, repetition) {
-      let pattern = context.createPattern(image, repetition);
+      let pattern;
+
+      // Avoid an exception relating to the image not being loaded.
+      if (image.complete)
+        pattern = context.createPattern(image, repetition);
+      else {
+        pattern = {fake: true};
+        Object.setPrototypeOf(pattern, CanvasPattern.prototype);
+      }
       pattern._image = image;
 
-      if (image instanceof Image) {
-        transcript.images.push({id: imageId, src: image.src});
+      if (image instanceof dom.window.HTMLImageElement || image instanceof Image) {
+        let imageId = transcript.images.indexOf(image.src);
+        if (imageId === -1) {
+          imageId = transcript.images.length;
+          transcript.images.push(image.src);
+        }
+
         print_transcript("let pattern%s = %s.createPattern(image%s, '%s');", patternId, id, imageId, repetition);
 
         pattern._id = 'pattern'+patternId;
-        imageId++;
         patternId++;
       }
       else {
@@ -284,15 +356,40 @@ function mock_canvas_context(dom, canvas, id) {
       return gradient;
     },
     set fillStyle(value) {
-      if (typeof value === 'string')
-        print_transcript("%s.fillStyle = '%s';", id, value);
-      else if (value instanceof CanvasPattern)
+      if (typeof value === 'string') {
+        if (value === '#000000') {
+          if (unit_mode === 'shadow') {
+            print_transcript("\/\/%s.fillStyle = '%s';", id, value);
+            value = '#dddddd';
+            print_transcript("%s.fillStyle = '%s';", id, value);
+          }
+          else if (unit_mode) {
+            print_transcript("\/\/%s.fillStyle = '%s';", id, value);
+          }
+          else
+            print_transcript("%s.fillStyle = '%s';", id, value);
+        }
+        else
+          print_transcript("%s.fillStyle = '%s';", id, value);
+
+        context.fillStyle = value;
+      }
+      else if (value instanceof CanvasPattern) {
         print_transcript('%s.fillStyle = %s;', id, value._id);
-      else if (value instanceof CanvasGradient)
+
+        if (!value.fake)
+          context.fillStyle = value;
+      }
+      else if (value instanceof CanvasGradient) {
         print_transcript('%s.fillStyle = %s;', id, value._id);
+
+        context.fillStyle = value._gradient;
+      }
       else {
         print_transcript('// Warning: The following line may be malformed');
         print_transcript("%s.fillStyle = %s;", id, value);
+
+        context.fillStyle = value;
       }
 
       return this._fillStyle = value;
@@ -300,84 +397,42 @@ function mock_canvas_context(dom, canvas, id) {
 
     fill: () => {
       print_transcript('%s.fill();', id);
+      context.fill();
     },
     fillRect: function (x, y, width, height) {
-      print_transcript('%s.fillRect(%s, %s, %s, %s);', id, x, y, width, height);
-
       if (x === 0) {
-        extracted.width = width;
-        extracted.height = height;
+        if (extracted.width === null) {
+          extracted.width = width;
+          extracted.height = height;
+        }
+
+        if (unit_mode) {
+          print_transcript('\/\/%s.fillRect(%s, %s, %s, %s);', id, x, y, width, height);
+          if (unit_mode === 'shadow')
+            print_transcript('%s.fillRect(%s, %s, %s, %s);', id, x, y, extracted.width, extracted.height);
+        }
+        else
+          print_transcript('%s.fillRect(%s, %s, %s, %s);', id, x, y, width, height);
       }
       else {
-        let frame = extracted.frames[extracted.frames.length-1];
-        if (frame === undefined)
-          extracted.frames.push(frame = []);
+        print_transcript('%s.fillRect(%s, %s, %s, %s);', id, x, y, width, height);
 
-        let transform = [1, 0, 0, 1, 0, 0];
-        let current_item = {
-          transform: this._transform,
-        };
+        if (frame_index === -1)
+          frame_index++;
+        if (frame_index === extracted.frames.length)
+          extracted.frames.push([]);
 
-        [...this._stack, current_item].forEach(item => {
-          transform = multiply_transform(item.transform, transform);
-        });
-
-        // Adjust the transform to round the scaling to 2 decimal places.
-        var sx = Math.abs(1 / transform[0]);
-        var sy = Math.abs(1 / transform[3]);
-        transform = multiply_transform([sx, 0, 0, sy, 0, 0], transform);
-
-        // Only so much precision matters
-        transform[0] = transform[0].toFixed(2) * 1;
-        transform[3] = transform[3].toFixed(2) * 1;
-        transform[4] = transform[4].toFixed(0) * 1;
-        transform[5] = transform[5].toFixed(0) * 1;
-
-        var shape = {};
-        var fillStyle = this._fillStyle;
+        let frame = extracted.frames[frame_index];
+        let shape;
+        let fillStyle = this._fillStyle;
 
         if (typeof(fillStyle) === 'object') {
           if (fillStyle instanceof CanvasPattern) {
-            let src = fillStyle._image.src;
-            let index = extracted.images.indexOf(src);
-
-            if (index === -1) {
-              extracted.images.push(src);
-              shape.i = extracted.images.length-1;
-            }
-            else {
-              shape.i = index;
-            }
-
-            if ('color' in fillStyle) {
-              let color = fillStyle.color;
-
-              if (color.g_mult === 0 && color.b_mult === 0) {
-                color.g_mult = 255;
-                color.b_mult = 255;
-                if (color.isEmpty())
-                  shape.trim = true;
-                else {
-                  color.g_mult = 0;
-                  color.b_mult = 0;
-                }
-              }
-
-              if (!(color.isEmpty())) {
-                shape.color = {};
-                if (color.r_add !== 0)    shape.color.ra = color.r_add;
-                if (color.g_add !== 0)    shape.color.ga = color.g_add;
-                if (color.b_add !== 0)    shape.color.ba = color.b_add;
-                if (color.a_add !== 0)    shape.color.aa = color.a_add;
-                if (color.r_mult !== 255) shape.color.ra = color.r_mult;
-                if (color.g_mult !== 255) shape.color.ga = color.g_mult;
-                if (color.b_mult !== 255) shape.color.ba = color.b_mult;
-                if (color.a_mult !== 255) shape.color.aa = color.a_mult;
-              }
-            }
+            shape = capture_image(this);
           }
           else if (fillStyle instanceof CanvasGradient) {
-            // todo
+            context.fillRect(x, y, width, height);
+            shape = capture_effect();
           }
           else if (fillStyle instanceof dom.window.HTMLElement) {
             if (fillStyle.tagName === 'CANVAS') {
@@ -393,35 +448,15 @@ function mock_canvas_context(dom, canvas, id) {
           throw new Error('Unsupported fillStyle');
         }
 
-        if (transform[0] === transform[3]) {
-          if (transform[0] !== 1)
-            shape.s = transform[0];
-        }
-        else {
-          if (transform[0] !== 1)
-            shape.sx = transform[0];
-          if (transform[3] !== 1)
-            shape.sy = transform[3];
-        }
-
-        if (transform[1] === transform[2]) {
-          if (transform[1] !== 0)
-            shape.r = transform[1];
-        }
-        else {
-          if (transform[1] !== 0)
-            shape.rx = transform[1];
-          if (transform[2] !== 0)
-            shape.ry = transform[2];
-        }
-
-        if (transform[4] !== 0)
-          shape.x = transform[4];
-        if (transform[5] !== 0)
-          shape.y = transform[5];
-
-        frame.push(shape);
+        // The shadow shape must be first since it is underneath.
+        if (unit_mode === 'shadow')
+          frame.unshift(shape);
+        else
+          frame.push(shape);
       }
+
+      // Reset our canvas to full transparency
+      context.clearRect(0, 0, extracted.width, extracted.height);
     },
 
     save: function () {
@@ -430,11 +465,13 @@ function mock_canvas_context(dom, canvas, id) {
         transform: this._transform,
       });
       this._transform = [1, 0, 0, 1, 0, 0];
+      context.save();
     },
     restore: function () {
       print_transcript('%s.restore();', id);
       var item = this._stack.pop();
       this._transform = item.transform;
+      context.restore();
     },
 
     // Additional properties defined by canvas.js
@@ -451,6 +488,108 @@ function mock_canvas_context(dom, canvas, id) {
       return this.__savedMatrices = value;
     },
   });
+
+  function capture_image(mock_context) {
+    let fillStyle = mock_context._fillStyle;
+    let transform = [1, 0, 0, 1, 0, 0];
+    let current_item = {
+      transform: mock_context._transform,
+    };
+
+    [...mock_context._stack, current_item].forEach(item => {
+      transform = multiply_transform(item.transform, transform);
+    });
+
+    // Adjust the transform to round the scaling to 2 decimal places.
+    var sx = Math.abs(1 / transform[0]);
+    var sy = Math.abs(1 / transform[3]);
+    transform = multiply_transform([sx, 0, 0, sy, 0, 0], transform);
+
+    // Only so much precision matters
+    transform[0] = transform[0].toFixed(2) * 1;
+    transform[1] = transform[1].toFixed(2) * 1;
+    transform[2] = transform[2].toFixed(2) * 1;
+    transform[3] = transform[3].toFixed(2) * 1;
+    transform[4] = transform[4].toFixed(0) * 1;
+    transform[5] = transform[5].toFixed(0) * 1;
+
+    var shape = {};
+    let src = fillStyle._image.src;
+    let index = extracted.images.indexOf(src);
+
+    if (index === -1) {
+      extracted.images.push(src);
+      shape.i = extracted.images.length - 1;
+    }
+    else
+      shape.i = index;
+
+    /*
+    if ('color' in fillStyle) {
+      let color = fillStyle.color;
+
+      if (color.g_mult === 0 && color.b_mult === 0) {
+        color.g_mult = 255;
+        color.b_mult = 255;
+        if (color.isEmpty())
+          shape.trim = true;
+        else {
+          color.g_mult = 0;
+          color.b_mult = 0;
+        }
+      }
+
+      if (!(color.isEmpty())) {
+        shape.color = {};
+        if (color.r_add !== 0)    shape.color.ra = color.r_add;
+        if (color.g_add !== 0)    shape.color.ga = color.g_add;
+        if (color.b_add !== 0)    shape.color.ba = color.b_add;
+        if (color.a_add !== 0)    shape.color.aa = color.a_add;
+        if (color.r_mult !== 255) shape.color.ra = color.r_mult;
+        if (color.g_mult !== 255) shape.color.ga = color.g_mult;
+        if (color.b_mult !== 255) shape.color.ba = color.b_mult;
+        if (color.a_mult !== 255) shape.color.aa = color.a_mult;
+      }
+    }
+    */
+
+    if (transform[0] === transform[3]) {
+      if (transform[0] !== 1)
+        shape.s = transform[0];
+    }
+    else {
+      if (transform[0] !== 1)
+        shape.sx = transform[0];
+      if (transform[3] !== 1)
+        shape.sy = transform[3];
+    }
+
+    if (transform[1] === transform[2]) {
+      if (transform[1] !== 0)
+        shape.r = transform[1];
+    }
+    else {
+      if (transform[1] !== 0)
+        shape.rx = transform[1];
+      if (transform[2] !== 0)
+        shape.ry = transform[2];
+    }
+
+    if (transform[4] !== 0)
+      shape.x = transform[4];
+    if (transform[5] !== 0)
+      shape.y = transform[5];
+
+    return shape;
+  }
+
+  function capture_effect() {
+    let src = canvas.toDataURL();
+    let index = extracted.images.length;
+    extracted.images.push(src);
+
+    return {i: index};
+  }
 
   return mock;
 }
@@ -475,19 +614,65 @@ function multiply_transform(m1, m2) {
 }
 
 function export_extracted() {
-  fs.writeFileSync('animations/'+file_prefix+'.min.json', JSON.stringify(extracted));
-  console.log('Wrote animations/'+file_prefix+'.min.json');
-  fs.writeFileSync('animations/'+file_prefix+'.json', JSON.stringify(extracted, null, 2));
-  console.log('Wrote animations/'+file_prefix+'.json');
+  if (unit_mode) {
+    /* 
+     * Assume the first 3 images in each frame are, in order: shadow, base, trim.
+     * 
+     * The different shape names are given special treatment by the game:
+     *   * Tints are only applied to the base and trim, e.g. while healing.
+     *   * The team color is only applied to the trim.
+     *   * The shadow is made semi-transparent.
+     *
+     * The assassin has frames with more than 3 images.  Try to identify
+     * base vs trim images based on the first 3 images across all frames.
+     */
+    let shadow = [];
+    let base = [];
+    let trim = [];
+
+    extracted.frames.filter(frame => {
+      let image_shapes = frame.filter(shape => 'i' in shape);
+
+      if (image_shapes.length > 2) {
+        image_shapes[0].n = 's';
+        if (shadow.indexOf(image_shapes[0].i) === -1)
+          shadow.push(image_shapes[0].i);
+
+        image_shapes[1].n = 'b';
+        if (base.indexOf(image_shapes[1].i) === -1)
+          base.push(image_shapes[1].i);
+
+        image_shapes[2].n = 't';
+        if (trim.indexOf(image_shapes[2].i) === -1)
+          trim.push(image_shapes[2].i);
+
+        image_shapes.forEach((shape, i) => {
+          if (i < 3) return;
+
+          if (shadow.indexOf(shape.i) > -1)
+            shape.n = 's';
+          else if (base.indexOf(shape.i) > -1)
+            shape.n = 'b';
+          else if (trim.indexOf(shape.i) > -1)
+            shape.n = 't';
+        });
+      }
+    });
+  }
+
+  fs.writeFileSync('extracted/'+file_prefix+'.min.json', JSON.stringify(extracted));
+  console.log('Wrote extracted/'+file_prefix+'.min.json');
+  fs.writeFileSync('extracted/'+file_prefix+'.json', JSON.stringify(extracted, null, 2));
+  console.log('Wrote extracted/'+file_prefix+'.json');
 
   // Build transcript
   let js = '';
 
   if (transcript.images.length)
-    js = transcript.images.map(image => {
+    js = transcript.images.map((src, id) => {
       return [
-        'let image'+image.id+' = new Image();',
-        'image'+image.id+".src = '"+image.src+"';",
+        'let image'+id+' = new Image();',
+        'image'+id+".src = '"+src+"';",
       ].join('\n');
     }).join('\n')+'\n\n';
 
@@ -502,8 +687,13 @@ function export_extracted() {
   js += '  switch (frame_index) {\n';
 
   js += transcript.frames.map((frame, i) => {
+    let shadow = transcript.shadow[i] || [];
+
     return [
       '  case '+i+':',
+      '    // Shadow',
+      shadow.map(line => '    '+line).join('\n'),
+      '    // Unit',
       frame.map(line => '    '+line).join('\n'),
       '    break;',
     ].join('\n');
@@ -514,8 +704,8 @@ function export_extracted() {
 
   js += 'setInterval(drawFrame, 83);\n';
 
-  fs.writeFileSync('animations/'+file_prefix+'.js', js);
-  console.log('Wrote animations/'+file_prefix+'.js');
+  fs.writeFileSync('extracted/'+file_prefix+'.js', js);
+  console.log('Wrote extracted/'+file_prefix+'.js');
 }
 
 function print_transcript() {
@@ -525,9 +715,22 @@ function print_transcript() {
     format = format.replace('%s', arg);
   });
 
-  let frame = transcript.frames[transcript.frames.length-1];
-  if (frame === undefined)
-    transcript.frames.push(frame = []);
+  if (frame_index === -1)
+    frame_index++;
+
+  let frame;
+  if (unit_mode === 'shadow') {
+    if (frame_index === transcript.shadow.length)
+      transcript.shadow.push([]);
+
+    frame = transcript.shadow[frame_index];
+  }
+  else {
+    if (frame_index === transcript.frames.length)
+      transcript.frames.push([]);
+
+    frame = transcript.frames[frame_index];
+  }
 
   frame.push(format);
 }
