@@ -432,7 +432,6 @@ function mock_canvas_context(dom, canvas, id) {
         print_transcript('%s.fillRect(%s, %s, %s, %s);', id, x, y, width, height);
 
         if (fillStyle instanceof CanvasPattern) {
-          console.log('capture_image');
           shape = capture_image(this);
 
           // Reset our canvas to full transparency
@@ -666,6 +665,10 @@ function export_extracted() {
           else if (trim.indexOf(shape.i) > -1)
             shape.n = 't';
         });
+      }
+      else if (image_shapes.length === 2) {
+        image_shapes[0].n = 's';
+        image_shapes[1].n = 'b';
       }
     });
   }
