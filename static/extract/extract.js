@@ -358,16 +358,14 @@ function mock_canvas_context(dom, canvas, id) {
     set fillStyle(value) {
       if (typeof value === 'string') {
         if (value === '#000000') {
-          if (unit_mode === 'shadow') {
+          if (unit_mode && unit_mode !== 'shadow') {
+            print_transcript("\/\/%s.fillStyle = '%s';", id, value);
+          }
+          else {
             print_transcript("\/\/%s.fillStyle = '%s';", id, value);
             value = '#dddddd';
             print_transcript("%s.fillStyle = '%s';", id, value);
           }
-          else if (unit_mode) {
-            print_transcript("\/\/%s.fillStyle = '%s';", id, value);
-          }
-          else
-            print_transcript("%s.fillStyle = '%s';", id, value);
         }
         else
           print_transcript("%s.fillStyle = '%s';", id, value);
@@ -400,63 +398,75 @@ function mock_canvas_context(dom, canvas, id) {
       context.fill();
     },
     fillRect: function (x, y, width, height) {
-      if (x === 0) {
-        if (extracted.width === null) {
-          extracted.width = width;
-          extracted.height = height;
-        }
+      if (frame_index === -1)
+        frame_index++;
+      if (frame_index === extracted.frames.length)
+        extracted.frames.push([]);
 
-        if (unit_mode) {
-          print_transcript('\/\/%s.fillRect(%s, %s, %s, %s);', id, x, y, width, height);
-          if (unit_mode === 'shadow')
-            print_transcript('%s.fillRect(%s, %s, %s, %s);', id, x, y, extracted.width, extracted.height);
-        }
-        else
-          print_transcript('%s.fillRect(%s, %s, %s, %s);', id, x, y, width, height);
-      }
-      else {
-        print_transcript('%s.fillRect(%s, %s, %s, %s);', id, x, y, width, height);
+      let frame = extracted.frames[frame_index];
+      let shape;
+      let fillStyle = this._fillStyle;
 
-        if (frame_index === -1)
-          frame_index++;
-        if (frame_index === extracted.frames.length)
-          extracted.frames.push([]);
-
-        let frame = extracted.frames[frame_index];
-        let shape;
-        let fillStyle = this._fillStyle;
-
-        if (typeof(fillStyle) === 'object') {
-          if (fillStyle instanceof CanvasPattern) {
-            shape = capture_image(this);
+      if (typeof fillStyle === 'string') {
+        if (x === 0 && y === 0) {
+          if (extracted.width === null) {
+            extracted.width = width;
+            extracted.height = height;
           }
-          else if (fillStyle instanceof CanvasGradient) {
-            context.fillRect(x, y, width, height);
-            shape = capture_effect();
-          }
-          else if (fillStyle instanceof dom.window.HTMLElement) {
-            if (fillStyle.tagName === 'CANVAS') {
-              throw new Error('Unsupported fillStyle Canvas');
-            }
-            else
-              throw new Error('Unsupported fillStyle Element');
+
+          if (unit_mode) {
+            print_transcript('\/\/%s.fillRect(%s, %s, %s, %s);', id, x, y, width, height);
+            if (unit_mode === 'shadow')
+              print_transcript('%s.fillRect(%s, %s, %s, %s);', id, x, y, extracted.width, extracted.height);
           }
           else
-            throw new Error('Unsupported fillStyle');
-        }
-        else {
-          throw new Error('Unsupported fillStyle');
-        }
+            print_transcript('%s.fillRect(%s, %s, %s, %s);', id, x, y, width, height);
 
-        // The shadow shape must be first since it is underneath.
+          // Reset our canvas to full transparency
+          context.clearRect(0, 0, extracted.width, extracted.height);
+        }
+        else
+          throw new Error('Unsupported fillStyle');
+      }
+      else if (typeof(fillStyle) === 'object') {
+        print_transcript('%s.fillRect(%s, %s, %s, %s);', id, x, y, width, height);
+
+        if (fillStyle instanceof CanvasPattern) {
+          console.log('capture_image');
+          shape = capture_image(this);
+
+          // Reset our canvas to full transparency
+          context.clearRect(0, 0, extracted.width, extracted.height);
+        }
+        else if (fillStyle instanceof CanvasGradient) {
+          // If last shape if it is an effect, combine it.
+          if (frame.length && !('x' in frame[frame.length-1])) {
+            extracted.images.pop();
+            frame.pop();
+          }
+
+          context.fillRect(x, y, width, height);
+          shape = capture_effect();
+        }
+        else if (fillStyle instanceof dom.window.HTMLElement) {
+          if (fillStyle.tagName === 'CANVAS') {
+            throw new Error('Unsupported fillStyle Canvas');
+          }
+          else
+            throw new Error('Unsupported fillStyle Element');
+        }
+        else
+          throw new Error('Unsupported fillStyle');
+      }
+      else
+        throw new Error('Unsupported fillStyle');
+
+      // The shadow shape must be first since it is underneath.
+      if (shape)
         if (unit_mode === 'shadow')
           frame.unshift(shape);
         else
           frame.push(shape);
-      }
-
-      // Reset our canvas to full transparency
-      context.clearRect(0, 0, extracted.width, extracted.height);
     },
 
     save: function () {
@@ -688,15 +698,23 @@ function export_extracted() {
 
   js += transcript.frames.map((frame, i) => {
     let shadow = transcript.shadow[i] || [];
+    let lines = ['  case '+i+':'];
 
-    return [
-      '  case '+i+':',
-      '    // Shadow',
-      shadow.map(line => '    '+line).join('\n'),
-      '    // Unit',
-      frame.map(line => '    '+line).join('\n'),
-      '    break;',
-    ].join('\n');
+    if (unit_mode) {
+      lines.push(
+        '    // Shadow',
+        shadow.map(line => '    '+line).join('\n'),
+        '    // Unit',
+        frame.map(line => '    '+line).join('\n'),
+      );
+    }
+    else {
+      lines.push(frame.map(line => '    '+line).join('\n'));
+    }
+
+    lines.push('    break;');
+
+    return lines.join('\n');
   }).join('\n')+'\n';
 
   js += '  }\n';
