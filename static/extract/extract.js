@@ -287,19 +287,52 @@ function mock_canvas_context(dom, canvas, id) {
     transform: function (sx, rx, ry, sy, tx, ty) {
       let transform = [sx, rx, ry, sy, tx, ty];
 
+      /*
+       * To improve accuracy of sprite x/y coordinates, round near-integers to integers.
+       */
+      if (rx === 0 && ry === 0 && (tx !== 0 || ty !== 0)) {
+        // Testing equality of decimal numbers may be problematic, test strings.
+        let str_sx = Math.abs(this._worldTransform[0]).toString();
+        let str_sy = Math.abs(this._worldTransform[3]).toString();
+        //if (frame_index === 39)
+        //  console.log(transform, this._transform, str_sx, str_sy);
+
+        if (str_sx === '1' && str_sy === '1') {
+          // If decimal values are very close to rounded integer values, then use
+          // the integer values.
+          let round_tx = Math.round(tx);
+          let round_ty = Math.round(ty);
+
+          if (Math.abs(round_tx - tx) < 0.1)
+            transform[4] = round_tx;
+          if (Math.abs(round_ty - ty) < 0.1)
+            transform[5] = round_ty;
+        }
+        else if (str_sx === '0.05' && str_sy === '0.05') {
+          let round_tx = Math.round(tx / 20) * 20;
+          let round_ty = Math.round(ty / 20) * 20;
+
+          if (Math.abs(round_tx - tx) < 2)
+            transform[4] = round_tx;
+          if (Math.abs(round_ty - ty) < 2)
+            transform[5] = round_ty;
+        }
+      }
+
       if (unit_mode)
         // The shadow offset must be the same as the base/trim offset
         if (sx === 1 && rx === 0 && ry === 0 && sy === 1 && (tx !== 0 || ty !== 0))
           if (offset) {
-            if (unit_mode === 'shadow') {
-              print_transcript('\/\/%s.transform(%s, %s, %s, %s, %s, %s);', id, ...transform);
+            if (unit_mode === 'shadow')
               transform = offset;
-            }
           }
           else
             offset = transform;
 
+      if (tx !== transform[4] || ty !== transform[5])
+        print_transcript('\/\/%s.transform(%s, %s, %s, %s, %s, %s);', id, sx, rx, ry, sy, tx, ty);
       print_transcript('%s.transform(%s, %s, %s, %s, %s, %s);', id, ...transform);
+
       this._transform = multiply_transform(transform, this._transform);
       context.transform(...transform);
     },
@@ -483,6 +516,20 @@ function mock_canvas_context(dom, canvas, id) {
       context.restore();
     },
 
+    // Custom attribute
+    get _worldTransform() {
+      let transform = [1, 0, 0, 1, 0, 0];
+      let current_item = {
+        transform: this._transform,
+      };
+
+      [...this._stack, current_item].forEach(item => {
+        transform = multiply_transform(item.transform, transform);
+      });
+
+      return transform;
+    },
+
     // Additional properties defined by canvas.js
     set _matrix(value) {
       //console.log(id, 'set', '_matrix', value);
@@ -500,14 +547,7 @@ function mock_canvas_context(dom, canvas, id) {
 
   function capture_image(mock_context) {
     let fillStyle = mock_context._fillStyle;
-    let transform = [1, 0, 0, 1, 0, 0];
-    let current_item = {
-      transform: mock_context._transform,
-    };
-
-    [...mock_context._stack, current_item].forEach(item => {
-      transform = multiply_transform(item.transform, transform);
-    });
+    let transform = mock_context._worldTransform;
 
     // Adjust the transform to round the scaling to 2 decimal places.
     var sx = Math.abs(1 / transform[0]);
