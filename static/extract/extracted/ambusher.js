@@ -363,7 +363,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -374,7 +374,8 @@ function drawFrame() {
     context.lineTo(820, 260);
     context.save();
     context.clip();
-    context.transform(19.7589111328125, 0, 0, 19.28558349609375, -840, -299);
+    //context.transform(19.7589111328125, 0, 0, 19.28558349609375, -840, -299);
+    context.transform(19.7589111328125, 0, 0, 19.28558349609375, -840, -300);
     context.transform(1.011764705882353, 0, 0, 1.0333333333333334, -0.5, -0.5);
     let pattern250 = context.createPattern(image144, 'repeat');
     context.fillStyle = pattern250;
@@ -389,7 +390,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -400,7 +402,8 @@ function drawFrame() {
     context.lineTo(820, 260);
     context.save();
     context.clip();
-    context.transform(19.7589111328125, 0, 0, 19.6551513671875, -840, -899);
+    //context.transform(19.7589111328125, 0, 0, 19.6551513671875, -840, -899);
+    context.transform(19.7589111328125, 0, 0, 19.6551513671875, -840, -900);
     context.transform(1.011764705882353, 0, 0, 1.0166666666666666, -0.5, -0.5);
     let pattern0 = context.createPattern(image0, 'repeat');
     context.fillStyle = pattern0;
@@ -419,7 +422,8 @@ function drawFrame() {
     context.lineTo(500, -380);
     context.save();
     context.clip();
-    context.transform(19.615478515625, 0, 0, 19.23065185546875, -540, -899);
+    //context.transform(19.615478515625, 0, 0, 19.23065185546875, -540, -899);
+    context.transform(19.615478515625, 0, 0, 19.23065185546875, -540, -900);
     context.transform(1.0185185185185186, 0, 0, 1.0357142857142858, -0.5, -0.5);
     let pattern1 = context.createPattern(image1, 'repeat');
     context.fillStyle = pattern1;
@@ -440,7 +444,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -451,7 +455,8 @@ function drawFrame() {
     context.lineTo(820, 260);
     context.save();
     context.clip();
-    context.transform(19.7589111328125, 0, 0, 19.28558349609375, -840, -299);
+    //context.transform(19.7589111328125, 0, 0, 19.28558349609375, -840, -299);
+    context.transform(19.7589111328125, 0, 0, 19.28558349609375, -840, -300);
     context.transform(1.011764705882353, 0, 0, 1.0333333333333334, -0.5, -0.5);
     let pattern251 = context.createPattern(image144, 'repeat');
     context.fillStyle = pattern251;
@@ -466,7 +471,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -477,7 +483,8 @@ function drawFrame() {
     context.lineTo(820, 260);
     context.save();
     context.clip();
-    context.transform(19.7589111328125, 0, 0, 19.6551513671875, -840, -899);
+    //context.transform(19.7589111328125, 0, 0, 19.6551513671875, -840, -899);
+    context.transform(19.7589111328125, 0, 0, 19.6551513671875, -840, -900);
     context.transform(1.011764705882353, 0, 0, 1.0166666666666666, -0.5, -0.5);
     let pattern2 = context.createPattern(image0, 'repeat');
     context.fillStyle = pattern2;
@@ -496,7 +503,8 @@ function drawFrame() {
     context.lineTo(500, -380);
     context.save();
     context.clip();
-    context.transform(19.615478515625, 0, 0, 19.23065185546875, -540, -899);
+    //context.transform(19.615478515625, 0, 0, 19.23065185546875, -540, -899);
+    context.transform(19.615478515625, 0, 0, 19.23065185546875, -540, -900);
     context.transform(1.0185185185185186, 0, 0, 1.0357142857142858, -0.5, -0.5);
     let pattern3 = context.createPattern(image1, 'repeat');
     context.fillStyle = pattern3;
@@ -517,7 +525,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -528,7 +536,8 @@ function drawFrame() {
     context.lineTo(-560, -360);
     context.save();
     context.clip();
-    context.transform(-19.63623046875, 0, 0, 19.444580078125, 540, -379);
+    //context.transform(-19.63623046875, 0, 0, 19.444580078125, 540, -379);
+    context.transform(-19.63623046875, 0, 0, 19.444580078125, 540, -380);
     context.transform(1.0175438596491229, 0, 0, 1.0263157894736843, -0.5, -0.5);
     let pattern252 = context.createPattern(image145, 'repeat');
     context.fillStyle = pattern252;
@@ -543,7 +552,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, -44, -28);
     context.beginPath();
@@ -573,7 +583,8 @@ function drawFrame() {
     context.lineTo(340, -360);
     context.save();
     context.clip();
-    context.transform(19.5123291015625, 0, 0, 19.41162109375, -479, -1039);
+    //context.transform(19.5123291015625, 0, 0, 19.41162109375, -479, -1039);
+    context.transform(19.5123291015625, 0, 0, 19.41162109375, -480, -1040);
     context.transform(1.0232558139534884, 0, 0, 1.0277777777777777, -0.5, -0.5);
     let pattern5 = context.createPattern(image3, 'repeat');
     context.fillStyle = pattern5;
@@ -594,9 +605,10 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(0.05, 0, 0, 0.05, -44.05, -28.05);
+    //context.transform(0.05, 0, 0, 0.05, -44.05, -28.05);
+    context.transform(0.05, 0, 0, 0.05, -44, -28);
     context.beginPath();
     context.moveTo(1361, 61);
     context.lineTo(1361, 741);
@@ -605,7 +617,8 @@ function drawFrame() {
     context.lineTo(1361, 61);
     context.save();
     context.clip();
-    context.transform(-19.7015380859375, 0, 0, 19.4287109375, 1380, 41);
+    //context.transform(-19.7015380859375, 0, 0, 19.4287109375, 1380, 41);
+    context.transform(-19.7015380859375, 0, 0, 19.4287109375, 1380, 40);
     context.transform(1.0144927536231885, 0, 0, 1.027027027027027, -0.5, -0.5);
     let pattern253 = context.createPattern(image146, 'repeat');
     context.fillStyle = pattern253;
@@ -620,9 +633,11 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(0.05, 0, 0, 0.05, -44.05, -28);
+    //context.transform(0.05, 0, 0, 0.05, -44.05, -28);
+    context.transform(0.05, 0, 0, 0.05, -44, -28);
     context.beginPath();
     context.moveTo(1341, -520);
     context.lineTo(1341, 740);
@@ -631,7 +646,8 @@ function drawFrame() {
     context.lineTo(1341, -520);
     context.save();
     context.clip();
-    context.transform(19.69696044921875, 0, 0, 19.6875, 21, -540);
+    //context.transform(19.69696044921875, 0, 0, 19.6875, 21, -540);
+    context.transform(19.69696044921875, 0, 0, 19.6875, 20, -540);
     context.transform(1.0147058823529411, 0, 0, 1.0151515151515151, -0.5, -0.5);
     let pattern6 = context.createPattern(image4, 'repeat');
     context.fillStyle = pattern6;
@@ -650,7 +666,8 @@ function drawFrame() {
     context.lineTo(260, -500);
     context.save();
     context.clip();
-    context.transform(19.58343505859375, 0, 0, 19.310302734375, -699, -1080);
+    //context.transform(19.58343505859375, 0, 0, 19.310302734375, -699, -1080);
+    context.transform(19.58343505859375, 0, 0, 19.310302734375, -700, -1080);
     context.transform(1.02, 0, 0, 1.032258064516129, -0.5, -0.5);
     let pattern7 = context.createPattern(image5, 'repeat');
     context.fillStyle = pattern7;
@@ -671,7 +688,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -682,7 +699,8 @@ function drawFrame() {
     context.lineTo(-960, -600);
     context.save();
     context.clip();
-    context.transform(-19.71435546875, 0, 0, 19.5001220703125, 439, -620);
+    //context.transform(-19.71435546875, 0, 0, 19.5001220703125, 439, -620);
+    context.transform(-19.71435546875, 0, 0, 19.5001220703125, 440, -620);
     context.transform(1.0138888888888888, 0, 0, 1.0238095238095237, -0.5, -0.5);
     let pattern254 = context.createPattern(image147, 'repeat');
     context.fillStyle = pattern254;
@@ -697,7 +715,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -708,7 +727,8 @@ function drawFrame() {
     context.lineTo(420, 160);
     context.save();
     context.clip();
-    context.transform(19.71435546875, 0, 0, 19.6923828125, -980, -1139);
+    //context.transform(19.71435546875, 0, 0, 19.6923828125, -980, -1139);
+    context.transform(19.71435546875, 0, 0, 19.6923828125, -980, -1140);
     context.transform(1.0138888888888888, 0, 0, 1.0149253731343284, -0.5, -0.5);
     let pattern8 = context.createPattern(image6, 'repeat');
     context.fillStyle = pattern8;
@@ -727,7 +747,8 @@ function drawFrame() {
     context.lineTo(1080, -500);
     context.save();
     context.clip();
-    context.transform(19.59991455078125, 0, 0, 19.23065185546875, 80, -519);
+    //context.transform(19.59991455078125, 0, 0, 19.23065185546875, 80, -519);
+    context.transform(19.59991455078125, 0, 0, 19.23065185546875, 80, -520);
     context.transform(1.0192307692307692, 0, 0, 1.0357142857142858, -0.5, -0.5);
     let pattern9 = context.createPattern(image7, 'repeat');
     context.fillStyle = pattern9;
@@ -748,7 +769,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -774,9 +795,11 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(0.05, 0, 0, 0.05, -44, -27.95);
+    //context.transform(0.05, 0, 0, 0.05, -44, -27.95);
+    context.transform(0.05, 0, 0, 0.05, -44, -28);
     context.beginPath();
     context.moveTo(1200, 640);
     context.lineTo(-120, 640);
@@ -804,7 +827,8 @@ function drawFrame() {
     context.lineTo(60, -560);
     context.save();
     context.clip();
-    context.transform(19.58343505859375, 0, 0, 19.28558349609375, 40, -579);
+    //context.transform(19.58343505859375, 0, 0, 19.28558349609375, 40, -579);
+    context.transform(19.58343505859375, 0, 0, 19.28558349609375, 40, -580);
     context.transform(1.02, 0, 0, 1.0333333333333334, -0.5, -0.5);
     let pattern11 = context.createPattern(image9, 'repeat');
     context.fillStyle = pattern11;
@@ -825,7 +849,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -851,9 +875,11 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(0.05, 0, 0, 0.05, -44, -27.95);
+    //context.transform(0.05, 0, 0, 0.05, -44, -27.95);
+    context.transform(0.05, 0, 0, 0.05, -44, -28);
     context.beginPath();
     context.moveTo(1200, 640);
     context.lineTo(-120, 640);
@@ -881,7 +907,8 @@ function drawFrame() {
     context.lineTo(60, -560);
     context.save();
     context.clip();
-    context.transform(19.58343505859375, 0, 0, 19.28558349609375, 40, -579);
+    //context.transform(19.58343505859375, 0, 0, 19.28558349609375, 40, -579);
+    context.transform(19.58343505859375, 0, 0, 19.28558349609375, 40, -580);
     context.transform(1.02, 0, 0, 1.0333333333333334, -0.5, -0.5);
     let pattern13 = context.createPattern(image9, 'repeat');
     context.fillStyle = pattern13;
@@ -902,7 +929,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -928,9 +955,11 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(0.05, 0, 0, 0.05, -44.05, -28);
+    //context.transform(0.05, 0, 0, 0.05, -44.05, -28);
+    context.transform(0.05, 0, 0, 0.05, -44, -28);
     context.beginPath();
     context.moveTo(921, 480);
     context.lineTo(-119, 480);
@@ -939,7 +968,8 @@ function drawFrame() {
     context.lineTo(921, 480);
     context.save();
     context.clip();
-    context.transform(19.62249755859375, 0, 0, 19.67742919921875, -139, -760);
+    //context.transform(19.62249755859375, 0, 0, 19.67742919921875, -139, -760);
+    context.transform(19.62249755859375, 0, 0, 19.67742919921875, -140, -760);
     context.transform(1.018181818181818, 0, 0, 1.015625, -0.5, -0.5);
     let pattern14 = context.createPattern(image10, 'repeat');
     context.fillStyle = pattern14;
@@ -958,7 +988,8 @@ function drawFrame() {
     context.lineTo(-899, -640);
     context.save();
     context.clip();
-    context.transform(19.52392578125, 0, 0, 19.41162109375, -919, -1319);
+    //context.transform(19.52392578125, 0, 0, 19.41162109375, -919, -1319);
+    context.transform(19.52392578125, 0, 0, 19.41162109375, -920, -1320);
     context.transform(1.0227272727272727, 0, 0, 1.0277777777777777, -0.5, -0.5);
     let pattern15 = context.createPattern(image11, 'repeat');
     context.fillStyle = pattern15;
@@ -979,7 +1010,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1005,9 +1036,11 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(0.05, 0, 0, 0.05, -44, -27.95);
+    //context.transform(0.05, 0, 0, 0.05, -44, -27.95);
+    context.transform(0.05, 0, 0, 0.05, -44, -28);
     context.beginPath();
     context.moveTo(1200, 640);
     context.lineTo(-120, 640);
@@ -1035,7 +1068,8 @@ function drawFrame() {
     context.lineTo(60, -560);
     context.save();
     context.clip();
-    context.transform(19.58343505859375, 0, 0, 19.28558349609375, 40, -579);
+    //context.transform(19.58343505859375, 0, 0, 19.28558349609375, 40, -579);
+    context.transform(19.58343505859375, 0, 0, 19.28558349609375, 40, -580);
     context.transform(1.02, 0, 0, 1.0333333333333334, -0.5, -0.5);
     let pattern17 = context.createPattern(image9, 'repeat');
     context.fillStyle = pattern17;
@@ -1056,7 +1090,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1067,7 +1101,8 @@ function drawFrame() {
     context.lineTo(-960, -600);
     context.save();
     context.clip();
-    context.transform(-19.71435546875, 0, 0, 19.5001220703125, 439, -620);
+    //context.transform(-19.71435546875, 0, 0, 19.5001220703125, 439, -620);
+    context.transform(-19.71435546875, 0, 0, 19.5001220703125, 440, -620);
     context.transform(1.0138888888888888, 0, 0, 1.0238095238095237, -0.5, -0.5);
     let pattern259 = context.createPattern(image147, 'repeat');
     context.fillStyle = pattern259;
@@ -1082,7 +1117,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1093,7 +1129,8 @@ function drawFrame() {
     context.lineTo(420, 160);
     context.save();
     context.clip();
-    context.transform(19.71435546875, 0, 0, 19.6923828125, -980, -1139);
+    //context.transform(19.71435546875, 0, 0, 19.6923828125, -980, -1139);
+    context.transform(19.71435546875, 0, 0, 19.6923828125, -980, -1140);
     context.transform(1.0138888888888888, 0, 0, 1.0149253731343284, -0.5, -0.5);
     let pattern18 = context.createPattern(image6, 'repeat');
     context.fillStyle = pattern18;
@@ -1112,7 +1149,8 @@ function drawFrame() {
     context.lineTo(1080, -500);
     context.save();
     context.clip();
-    context.transform(19.59991455078125, 0, 0, 19.23065185546875, 80, -519);
+    //context.transform(19.59991455078125, 0, 0, 19.23065185546875, 80, -519);
+    context.transform(19.59991455078125, 0, 0, 19.23065185546875, 80, -520);
     context.transform(1.0192307692307692, 0, 0, 1.0357142857142858, -0.5, -0.5);
     let pattern19 = context.createPattern(image7, 'repeat');
     context.fillStyle = pattern19;
@@ -1133,9 +1171,10 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(0.05, 0, 0, 0.05, -44.05, -28.05);
+    //context.transform(0.05, 0, 0, 0.05, -44.05, -28.05);
+    context.transform(0.05, 0, 0, 0.05, -44, -28);
     context.beginPath();
     context.moveTo(1361, 61);
     context.lineTo(1361, 741);
@@ -1144,7 +1183,8 @@ function drawFrame() {
     context.lineTo(1361, 61);
     context.save();
     context.clip();
-    context.transform(-19.7015380859375, 0, 0, 19.4287109375, 1380, 41);
+    //context.transform(-19.7015380859375, 0, 0, 19.4287109375, 1380, 41);
+    context.transform(-19.7015380859375, 0, 0, 19.4287109375, 1380, 40);
     context.transform(1.0144927536231885, 0, 0, 1.027027027027027, -0.5, -0.5);
     let pattern260 = context.createPattern(image146, 'repeat');
     context.fillStyle = pattern260;
@@ -1159,9 +1199,11 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(0.05, 0, 0, 0.05, -44.05, -28);
+    //context.transform(0.05, 0, 0, 0.05, -44.05, -28);
+    context.transform(0.05, 0, 0, 0.05, -44, -28);
     context.beginPath();
     context.moveTo(1341, -520);
     context.lineTo(1341, 740);
@@ -1170,7 +1212,8 @@ function drawFrame() {
     context.lineTo(1341, -520);
     context.save();
     context.clip();
-    context.transform(19.69696044921875, 0, 0, 19.6875, 21, -540);
+    //context.transform(19.69696044921875, 0, 0, 19.6875, 21, -540);
+    context.transform(19.69696044921875, 0, 0, 19.6875, 20, -540);
     context.transform(1.0147058823529411, 0, 0, 1.0151515151515151, -0.5, -0.5);
     let pattern20 = context.createPattern(image4, 'repeat');
     context.fillStyle = pattern20;
@@ -1189,7 +1232,8 @@ function drawFrame() {
     context.lineTo(260, -500);
     context.save();
     context.clip();
-    context.transform(19.58343505859375, 0, 0, 19.310302734375, -699, -1080);
+    //context.transform(19.58343505859375, 0, 0, 19.310302734375, -699, -1080);
+    context.transform(19.58343505859375, 0, 0, 19.310302734375, -700, -1080);
     context.transform(1.02, 0, 0, 1.032258064516129, -0.5, -0.5);
     let pattern21 = context.createPattern(image5, 'repeat');
     context.fillStyle = pattern21;
@@ -1210,7 +1254,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1221,7 +1265,8 @@ function drawFrame() {
     context.lineTo(-560, -360);
     context.save();
     context.clip();
-    context.transform(-19.63623046875, 0, 0, 19.444580078125, 540, -379);
+    //context.transform(-19.63623046875, 0, 0, 19.444580078125, 540, -379);
+    context.transform(-19.63623046875, 0, 0, 19.444580078125, 540, -380);
     context.transform(1.0175438596491229, 0, 0, 1.0263157894736843, -0.5, -0.5);
     let pattern261 = context.createPattern(image145, 'repeat');
     context.fillStyle = pattern261;
@@ -1236,7 +1281,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, -44, -28);
     context.beginPath();
@@ -1266,7 +1312,8 @@ function drawFrame() {
     context.lineTo(340, -360);
     context.save();
     context.clip();
-    context.transform(19.5123291015625, 0, 0, 19.41162109375, -479, -1039);
+    //context.transform(19.5123291015625, 0, 0, 19.41162109375, -479, -1039);
+    context.transform(19.5123291015625, 0, 0, 19.41162109375, -480, -1040);
     context.transform(1.0232558139534884, 0, 0, 1.0277777777777777, -0.5, -0.5);
     let pattern23 = context.createPattern(image3, 'repeat');
     context.fillStyle = pattern23;
@@ -1287,7 +1334,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1313,7 +1360,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1343,7 +1391,8 @@ function drawFrame() {
     context.lineTo(440, -220);
     context.save();
     context.clip();
-    context.transform(19.3939208984375, 0, 0, 19.3939208984375, -219, -879);
+    //context.transform(19.3939208984375, 0, 0, 19.3939208984375, -219, -879);
+    context.transform(19.3939208984375, 0, 0, 19.3939208984375, -220, -880);
     context.transform(1.0285714285714285, 0, 0, 1.0285714285714285, -0.5, -0.5);
     let pattern25 = context.createPattern(image13, 'repeat');
     context.fillStyle = pattern25;
@@ -1364,7 +1413,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1390,7 +1439,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1420,7 +1470,8 @@ function drawFrame() {
     context.lineTo(481, -180);
     context.save();
     context.clip();
-    context.transform(19.33319091796875, 0, 0, 19.5001220703125, -119, -980);
+    //context.transform(19.33319091796875, 0, 0, 19.5001220703125, -119, -980);
+    context.transform(19.33319091796875, 0, 0, 19.5001220703125, -120, -980);
     context.transform(1.03125, 0, 0, 1.0238095238095237, -0.5, -0.5);
     let pattern27 = context.createPattern(image15, 'repeat');
     context.fillStyle = pattern27;
@@ -1441,7 +1492,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1467,7 +1518,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1478,7 +1530,8 @@ function drawFrame() {
     context.lineTo(660, 440);
     context.save();
     context.clip();
-    context.transform(19.60784912109375, 0, 0, 19.705810546875, -360, -919);
+    //context.transform(19.60784912109375, 0, 0, 19.705810546875, -360, -919);
+    context.transform(19.60784912109375, 0, 0, 19.705810546875, -360, -920);
     context.transform(1.0188679245283019, 0, 0, 1.0142857142857142, -0.5, -0.5);
     let pattern28 = context.createPattern(image16, 'repeat');
     context.fillStyle = pattern28;
@@ -1497,7 +1550,8 @@ function drawFrame() {
     context.lineTo(580, -139);
     context.save();
     context.clip();
-    context.transform(19.3939208984375, 0, 0, 19.4287109375, -80, -839);
+    //context.transform(19.3939208984375, 0, 0, 19.4287109375, -80, -839);
+    context.transform(19.3939208984375, 0, 0, 19.4287109375, -80, -840);
     context.transform(1.0285714285714285, 0, 0, 1.027027027027027, -0.5, -0.5);
     let pattern29 = context.createPattern(image17, 'repeat');
     context.fillStyle = pattern29;
@@ -1518,7 +1572,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1529,7 +1583,8 @@ function drawFrame() {
     context.lineTo(921, 640);
     context.save();
     context.clip();
-    context.transform(19.62249755859375, 0, 0, 19.45953369140625, -139, -99);
+    //context.transform(19.62249755859375, 0, 0, 19.45953369140625, -139, -99);
+    context.transform(19.62249755859375, 0, 0, 19.45953369140625, -140, -100);
     context.transform(1.018181818181818, 0, 0, 1.0256410256410255, -0.5, -0.5);
     let pattern265 = context.createPattern(image149, 'repeat');
     context.fillStyle = pattern265;
@@ -1544,7 +1599,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1555,7 +1611,8 @@ function drawFrame() {
     context.lineTo(921, 480);
     context.save();
     context.clip();
-    context.transform(19.62249755859375, 0, 0, 19.67742919921875, -139, -760);
+    //context.transform(19.62249755859375, 0, 0, 19.67742919921875, -139, -760);
+    context.transform(19.62249755859375, 0, 0, 19.67742919921875, -140, -760);
     context.transform(1.018181818181818, 0, 0, 1.015625, -0.5, -0.5);
     let pattern30 = context.createPattern(image10, 'repeat');
     context.fillStyle = pattern30;
@@ -1595,7 +1652,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1606,7 +1663,8 @@ function drawFrame() {
     context.lineTo(-120, -80);
     context.save();
     context.clip();
-    context.transform(-19.7015380859375, 0, 0, 19.47357177734375, 1219, -99);
+    //context.transform(-19.7015380859375, 0, 0, 19.47357177734375, 1219, -99);
+    context.transform(-19.7015380859375, 0, 0, 19.47357177734375, 1220, -100);
     context.transform(1.0144927536231885, 0, 0, 1.025, -0.5, -0.5);
     let pattern266 = context.createPattern(image148, 'repeat');
     context.fillStyle = pattern266;
@@ -1621,7 +1679,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1651,7 +1710,8 @@ function drawFrame() {
     context.lineTo(60, -560);
     context.save();
     context.clip();
-    context.transform(19.58343505859375, 0, 0, 19.28558349609375, 40, -579);
+    //context.transform(19.58343505859375, 0, 0, 19.28558349609375, 40, -579);
+    context.transform(19.58343505859375, 0, 0, 19.28558349609375, 40, -580);
     context.transform(1.02, 0, 0, 1.0333333333333334, -0.5, -0.5);
     let pattern33 = context.createPattern(image9, 'repeat');
     context.fillStyle = pattern33;
@@ -1672,7 +1732,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1698,7 +1758,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1728,7 +1789,8 @@ function drawFrame() {
     context.lineTo(1080, -500);
     context.save();
     context.clip();
-    context.transform(19.59991455078125, 0, 0, 19.23065185546875, 80, -519);
+    //context.transform(19.59991455078125, 0, 0, 19.23065185546875, 80, -519);
+    context.transform(19.59991455078125, 0, 0, 19.23065185546875, 80, -520);
     context.transform(1.0192307692307692, 0, 0, 1.0357142857142858, -0.5, -0.5);
     let pattern35 = context.createPattern(image7, 'repeat');
     context.fillStyle = pattern35;
@@ -1749,7 +1811,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1760,7 +1822,8 @@ function drawFrame() {
     context.lineTo(1361, 61);
     context.save();
     context.clip();
-    context.transform(-19.7015380859375, 0, 0, 19.4287109375, 1380, 41);
+    //context.transform(-19.7015380859375, 0, 0, 19.4287109375, 1380, 41);
+    context.transform(-19.7015380859375, 0, 0, 19.4287109375, 1380, 40);
     context.transform(1.0144927536231885, 0, 0, 1.027027027027027, -0.5, -0.5);
     let pattern268 = context.createPattern(image146, 'repeat');
     context.fillStyle = pattern268;
@@ -1775,7 +1838,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1786,7 +1850,8 @@ function drawFrame() {
     context.lineTo(1341, -520);
     context.save();
     context.clip();
-    context.transform(19.69696044921875, 0, 0, 19.6875, 21, -540);
+    //context.transform(19.69696044921875, 0, 0, 19.6875, 21, -540);
+    context.transform(19.69696044921875, 0, 0, 19.6875, 20, -540);
     context.transform(1.0147058823529411, 0, 0, 1.0151515151515151, -0.5, -0.5);
     let pattern36 = context.createPattern(image4, 'repeat');
     context.fillStyle = pattern36;
@@ -1805,7 +1870,8 @@ function drawFrame() {
     context.lineTo(1140, -500);
     context.save();
     context.clip();
-    context.transform(19.58343505859375, 0, 0, 19.310302734375, 180, -519);
+    //context.transform(19.58343505859375, 0, 0, 19.310302734375, 180, -519);
+    context.transform(19.58343505859375, 0, 0, 19.310302734375, 180, -520);
     context.transform(1.02, 0, 0, 1.032258064516129, -0.5, -0.5);
     let pattern37 = context.createPattern(image5, 'repeat');
     context.fillStyle = pattern37;
@@ -1826,7 +1892,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1852,7 +1918,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1903,7 +1970,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1929,7 +1996,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -1980,7 +2048,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2006,7 +2074,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2017,7 +2086,8 @@ function drawFrame() {
     context.lineTo(681, 260);
     context.save();
     context.clip();
-    context.transform(19.75006103515625, 0, 0, 19.6551513671875, -920, -899);
+    //context.transform(19.75006103515625, 0, 0, 19.6551513671875, -920, -899);
+    context.transform(19.75006103515625, 0, 0, 19.6551513671875, -920, -900);
     context.transform(1.0121951219512195, 0, 0, 1.0166666666666666, -0.5, -0.5);
     let pattern42 = context.createPattern(image18, 'repeat');
     context.fillStyle = pattern42;
@@ -2036,7 +2106,8 @@ function drawFrame() {
     context.lineTo(500, -420);
     context.save();
     context.clip();
-    context.transform(19.62249755859375, 0, 0, 19.09088134765625, -559, -859);
+    //context.transform(19.62249755859375, 0, 0, 19.09088134765625, -559, -859);
+    context.transform(19.62249755859375, 0, 0, 19.09088134765625, -560, -860);
     context.transform(1.018181818181818, 0, 0, 1.0416666666666667, -0.5, -0.5);
     let pattern43 = context.createPattern(image19, 'repeat');
     context.fillStyle = pattern43;
@@ -2057,7 +2128,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2083,7 +2154,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2094,7 +2166,8 @@ function drawFrame() {
     context.lineTo(640, 261);
     context.save();
     context.clip();
-    context.transform(19.7589111328125, 0, 0, 19.6722412109375, -1020, -959);
+    //context.transform(19.7589111328125, 0, 0, 19.6722412109375, -1020, -959);
+    context.transform(19.7589111328125, 0, 0, 19.6722412109375, -1020, -960);
     context.transform(1.011764705882353, 0, 0, 1.0158730158730158, -0.5, -0.5);
     let pattern44 = context.createPattern(image20, 'repeat');
     context.fillStyle = pattern44;
@@ -2113,7 +2186,8 @@ function drawFrame() {
     context.lineTo(420, -520);
     context.save();
     context.clip();
-    context.transform(19.615478515625, 0, 0, 19.09088134765625, -620, -959);
+    //context.transform(19.615478515625, 0, 0, 19.09088134765625, -620, -959);
+    context.transform(19.615478515625, 0, 0, 19.09088134765625, -620, -960);
     context.transform(1.0185185185185186, 0, 0, 1.0416666666666667, -0.5, -0.5);
     let pattern45 = context.createPattern(image21, 'repeat');
     context.fillStyle = pattern45;
@@ -2134,7 +2208,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2145,7 +2219,8 @@ function drawFrame() {
     context.lineTo(621, -420);
     context.save();
     context.clip();
-    context.transform(19.7296142578125, 0, 0, 19.52392578125, -859, -440);
+    //context.transform(19.7296142578125, 0, 0, 19.52392578125, -859, -440);
+    context.transform(19.7296142578125, 0, 0, 19.52392578125, -860, -440);
     context.transform(1.013157894736842, 0, 0, 1.0227272727272727, -0.5, -0.5);
     let pattern273 = context.createPattern(image155, 'repeat');
     context.fillStyle = pattern273;
@@ -2160,7 +2235,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2211,7 +2287,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2222,7 +2298,8 @@ function drawFrame() {
     context.lineTo(940, -719);
     context.save();
     context.clip();
-    context.transform(19.83184814453125, 0, 0, 19.59991455078125, -1440, -739);
+    //context.transform(19.83184814453125, 0, 0, 19.59991455078125, -1440, -739);
+    context.transform(19.83184814453125, 0, 0, 19.59991455078125, -1440, -740);
     context.transform(1.0082644628099173, 0, 0, 1.0192307692307692, -0.5, -0.5);
     let pattern274 = context.createPattern(image156, 'repeat');
     context.fillStyle = pattern274;
@@ -2237,7 +2314,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2248,7 +2326,8 @@ function drawFrame() {
     context.lineTo(940, -1319);
     context.save();
     context.clip();
-    context.transform(19.83184814453125, 0, 0, 19.7503662109375, -1440, -1339);
+    //context.transform(19.83184814453125, 0, 0, 19.7503662109375, -1440, -1339);
+    context.transform(19.83184814453125, 0, 0, 19.7503662109375, -1440, -1340);
     context.transform(1.0082644628099173, 0, 0, 1.0121951219512195, -0.5, -0.5);
     let pattern48 = context.createPattern(image24, 'repeat');
     context.fillStyle = pattern48;
@@ -2267,7 +2346,8 @@ function drawFrame() {
     context.lineTo(440, -599);
     context.save();
     context.clip();
-    context.transform(19.615478515625, 0, 0, 19.09088134765625, -599, -1039);
+    //context.transform(19.615478515625, 0, 0, 19.09088134765625, -599, -1039);
+    context.transform(19.615478515625, 0, 0, 19.09088134765625, -600, -1040);
     context.transform(1.0185185185185186, 0, 0, 1.0416666666666667, -0.5, -0.5);
     let pattern49 = context.createPattern(image25, 'repeat');
     context.fillStyle = pattern49;
@@ -2288,7 +2368,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2314,7 +2394,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2344,7 +2425,8 @@ function drawFrame() {
     context.lineTo(520, -1039);
     context.save();
     context.clip();
-    context.transform(19.23065185546875, 0, 0, 19.09088134765625, 1, -1059);
+    //context.transform(19.23065185546875, 0, 0, 19.09088134765625, 1, -1059);
+    context.transform(19.23065185546875, 0, 0, 19.09088134765625, 0, -1060);
     context.transform(1.0357142857142858, 0, 0, 1.0416666666666667, -0.5, -0.5);
     let pattern51 = context.createPattern(image27, 'repeat');
     context.fillStyle = pattern51;
@@ -2365,7 +2447,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2391,7 +2473,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2442,7 +2525,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2468,7 +2551,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2479,7 +2563,8 @@ function drawFrame() {
     context.lineTo(720, 301);
     context.save();
     context.clip();
-    context.transform(19.705810546875, 0, 0, 19.71832275390625, -640, -1119);
+    //context.transform(19.705810546875, 0, 0, 19.71832275390625, -640, -1119);
+    context.transform(19.705810546875, 0, 0, 19.71832275390625, -640, -1120);
     context.transform(1.0142857142857142, 0, 0, 1.0136986301369864, -0.5, -0.5);
     let pattern54 = context.createPattern(image30, 'repeat');
     context.fillStyle = pattern54;
@@ -2498,7 +2583,8 @@ function drawFrame() {
     context.lineTo(501, -39);
     context.save();
     context.clip();
-    context.transform(19.28558349609375, 0, 0, 19.5556640625, -59, -939);
+    //context.transform(19.28558349609375, 0, 0, 19.5556640625, -59, -939);
+    context.transform(19.28558349609375, 0, 0, 19.5556640625, -60, -940);
     context.transform(1.0333333333333334, 0, 0, 1.0212765957446808, -0.5, -0.5);
     let pattern55 = context.createPattern(image31, 'repeat');
     context.fillStyle = pattern55;
@@ -2519,7 +2605,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2545,7 +2631,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2575,7 +2662,8 @@ function drawFrame() {
     context.lineTo(440, -140);
     context.save();
     context.clip();
-    context.transform(19.444580078125, 0, 0, 19.4873046875, -279, -919);
+    //context.transform(19.444580078125, 0, 0, 19.4873046875, -279, -919);
+    context.transform(19.444580078125, 0, 0, 19.4873046875, -280, -920);
     context.transform(1.0263157894736843, 0, 0, 1.024390243902439, -0.5, -0.5);
     let pattern57 = context.createPattern(image33, 'repeat');
     context.fillStyle = pattern57;
@@ -2596,7 +2684,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2607,7 +2695,8 @@ function drawFrame() {
     context.lineTo(840, -300);
     context.save();
     context.clip();
-    context.transform(19.7467041015625, 0, 0, 19.3939208984375, -740, -319);
+    //context.transform(19.7467041015625, 0, 0, 19.3939208984375, -740, -319);
+    context.transform(19.7467041015625, 0, 0, 19.3939208984375, -740, -320);
     context.transform(1.0123456790123457, 0, 0, 1.0285714285714285, -0.5, -0.5);
     let pattern279 = context.createPattern(image161, 'repeat');
     context.fillStyle = pattern279;
@@ -2622,7 +2711,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2633,7 +2723,8 @@ function drawFrame() {
     context.lineTo(840, 260);
     context.save();
     context.clip();
-    context.transform(19.7467041015625, 0, 0, 19.6551513671875, -740, -899);
+    //context.transform(19.7467041015625, 0, 0, 19.6551513671875, -740, -899);
+    context.transform(19.7467041015625, 0, 0, 19.6551513671875, -740, -900);
     context.transform(1.0123456790123457, 0, 0, 1.0166666666666666, -0.5, -0.5);
     let pattern58 = context.createPattern(image34, 'repeat');
     context.fillStyle = pattern58;
@@ -2652,7 +2743,8 @@ function drawFrame() {
     context.lineTo(500, -279);
     context.save();
     context.clip();
-    context.transform(19.60784912109375, 0, 0, 19.3548583984375, -520, -899);
+    //context.transform(19.60784912109375, 0, 0, 19.3548583984375, -520, -899);
+    context.transform(19.60784912109375, 0, 0, 19.3548583984375, -520, -900);
     context.transform(1.0188679245283019, 0, 0, 1.0303030303030303, -0.5, -0.5);
     let pattern59 = context.createPattern(image35, 'repeat');
     context.fillStyle = pattern59;
@@ -2673,7 +2765,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2684,7 +2776,8 @@ function drawFrame() {
     context.lineTo(840, -300);
     context.save();
     context.clip();
-    context.transform(19.7467041015625, 0, 0, 19.3939208984375, -740, -319);
+    //context.transform(19.7467041015625, 0, 0, 19.3939208984375, -740, -319);
+    context.transform(19.7467041015625, 0, 0, 19.3939208984375, -740, -320);
     context.transform(1.0123456790123457, 0, 0, 1.0285714285714285, -0.5, -0.5);
     let pattern280 = context.createPattern(image161, 'repeat');
     context.fillStyle = pattern280;
@@ -2699,7 +2792,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2710,7 +2804,8 @@ function drawFrame() {
     context.lineTo(840, 260);
     context.save();
     context.clip();
-    context.transform(19.7467041015625, 0, 0, 19.6551513671875, -740, -899);
+    //context.transform(19.7467041015625, 0, 0, 19.6551513671875, -740, -899);
+    context.transform(19.7467041015625, 0, 0, 19.6551513671875, -740, -900);
     context.transform(1.0123456790123457, 0, 0, 1.0166666666666666, -0.5, -0.5);
     let pattern60 = context.createPattern(image34, 'repeat');
     context.fillStyle = pattern60;
@@ -2729,7 +2824,8 @@ function drawFrame() {
     context.lineTo(500, -279);
     context.save();
     context.clip();
-    context.transform(19.60784912109375, 0, 0, 19.3548583984375, -520, -899);
+    //context.transform(19.60784912109375, 0, 0, 19.3548583984375, -520, -899);
+    context.transform(19.60784912109375, 0, 0, 19.3548583984375, -520, -900);
     context.transform(1.0188679245283019, 0, 0, 1.0303030303030303, -0.5, -0.5);
     let pattern61 = context.createPattern(image35, 'repeat');
     context.fillStyle = pattern61;
@@ -2750,7 +2846,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2776,7 +2872,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2806,7 +2903,8 @@ function drawFrame() {
     context.lineTo(440, -140);
     context.save();
     context.clip();
-    context.transform(19.444580078125, 0, 0, 19.4873046875, -279, -919);
+    //context.transform(19.444580078125, 0, 0, 19.4873046875, -279, -919);
+    context.transform(19.444580078125, 0, 0, 19.4873046875, -280, -920);
     context.transform(1.0263157894736843, 0, 0, 1.024390243902439, -0.5, -0.5);
     let pattern63 = context.createPattern(image33, 'repeat');
     context.fillStyle = pattern63;
@@ -2827,7 +2925,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2853,7 +2951,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2883,7 +2982,8 @@ function drawFrame() {
     context.lineTo(320, -200);
     context.save();
     context.clip();
-    context.transform(19.13055419921875, 0, 0, 19.47357177734375, -139, -960);
+    //context.transform(19.13055419921875, 0, 0, 19.47357177734375, -139, -960);
+    context.transform(19.13055419921875, 0, 0, 19.47357177734375, -140, -960);
     context.transform(1.04, 0, 0, 1.025, -0.5, -0.5);
     let pattern65 = context.createPattern(image37, 'repeat');
     context.fillStyle = pattern65;
@@ -2904,7 +3004,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -2915,7 +3015,8 @@ function drawFrame() {
     context.lineTo(-500, -360);
     context.save();
     context.clip();
-    context.transform(-19.62249755859375, 0, 0, 19.45953369140625, 559, -380);
+    //context.transform(-19.62249755859375, 0, 0, 19.45953369140625, 559, -380);
+    context.transform(-19.62249755859375, 0, 0, 19.45953369140625, 560, -380);
     context.transform(1.018181818181818, 0, 0, 1.0256410256410255, -0.5, -0.5);
     let pattern283 = context.createPattern(image149, 'repeat');
     context.fillStyle = pattern283;
@@ -2930,7 +3031,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 44, -28);
     context.beginPath();
@@ -2960,7 +3062,8 @@ function drawFrame() {
     context.lineTo(440, -360);
     context.save();
     context.clip();
-    context.transform(19.5123291015625, 0, 0, 19.41162109375, -380, -1039);
+    //context.transform(19.5123291015625, 0, 0, 19.41162109375, -380, -1039);
+    context.transform(19.5123291015625, 0, 0, 19.41162109375, -380, -1040);
     context.transform(1.0232558139534884, 0, 0, 1.0277777777777777, -0.5, -0.5);
     let pattern67 = context.createPattern(image39, 'repeat');
     context.fillStyle = pattern67;
@@ -2981,7 +3084,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 44, -28);
     context.beginPath();
@@ -2992,7 +3095,8 @@ function drawFrame() {
     context.lineTo(-100, 20);
     context.save();
     context.clip();
-    context.transform(-19.60784912109375, 0, 0, 19.5556640625, -81, 0);
+    //context.transform(-19.60784912109375, 0, 0, 19.5556640625, -81, 0);
+    context.transform(-19.60784912109375, 0, 0, 19.5556640625, -80, 0);
     context.transform(1.0188679245283019, 0, 0, 1.0212765957446808, -0.5, -0.5);
     let pattern284 = context.createPattern(image152, 'repeat');
     context.fillStyle = pattern284;
@@ -3007,7 +3111,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 44, -28);
     context.beginPath();
@@ -3037,7 +3142,8 @@ function drawFrame() {
     context.lineTo(-380, -580);
     context.save();
     context.clip();
-    context.transform(19.3939208984375, 0, 0, 19.45953369140625, -1039, -600);
+    //context.transform(19.3939208984375, 0, 0, 19.45953369140625, -1039, -600);
+    context.transform(19.3939208984375, 0, 0, 19.45953369140625, -1040, -600);
     context.transform(1.0285714285714285, 0, 0, 1.0256410256410255, -0.5, -0.5);
     let pattern69 = context.createPattern(image41, 'repeat');
     context.fillStyle = pattern69;
@@ -3058,7 +3164,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -3084,7 +3190,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -3095,7 +3202,8 @@ function drawFrame() {
     context.lineTo(920, -1240);
     context.save();
     context.clip();
-    context.transform(19.66094970703125, 0, 0, 19.705810546875, -260, -1259);
+    //context.transform(19.66094970703125, 0, 0, 19.705810546875, -260, -1259);
+    context.transform(19.66094970703125, 0, 0, 19.705810546875, -260, -1260);
     context.transform(1.0163934426229508, 0, 0, 1.0142857142857142, -0.5, -0.5);
     let pattern70 = context.createPattern(image42, 'repeat');
     context.fillStyle = pattern70;
@@ -3105,7 +3213,8 @@ function drawFrame() {
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 880, -561);
+    //context.transform(1, 0, 0, 1, 880, -561);
+    context.transform(1, 0, 0, 1, 880, -560);
     context.beginPath();
     context.moveTo(-359, -679);
     context.lineTo(-359, 81);
@@ -3114,7 +3223,8 @@ function drawFrame() {
     context.lineTo(-359, -679);
     context.save();
     context.clip();
-    context.transform(19.09088134765625, 0, 0, 19.4873046875, -799, -699);
+    //context.transform(19.09088134765625, 0, 0, 19.4873046875, -799, -699);
+    context.transform(19.09088134765625, 0, 0, 19.4873046875, -800, -700);
     context.transform(1.0416666666666667, 0, 0, 1.024390243902439, -0.5, -0.5);
     let pattern71 = context.createPattern(image43, 'repeat');
     context.fillStyle = pattern71;
@@ -3135,7 +3245,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -3146,7 +3256,8 @@ function drawFrame() {
     context.lineTo(-120, -640);
     context.save();
     context.clip();
-    context.transform(-19.6429443359375, 0, 0, 19.5556640625, 1000, -659);
+    //context.transform(-19.6429443359375, 0, 0, 19.5556640625, 1000, -659);
+    context.transform(-19.6429443359375, 0, 0, 19.5556640625, 1000, -660);
     context.transform(1.0172413793103448, 0, 0, 1.0212765957446808, -0.5, -0.5);
     let pattern286 = context.createPattern(image150, 'repeat');
     context.fillStyle = pattern286;
@@ -3161,9 +3272,11 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(0.05, 0, 0, 0.05, 44.05, -28.05);
+    //context.transform(0.05, 0, 0, 0.05, 44.05, -28.05);
+    context.transform(0.05, 0, 0, 0.05, 44, -28);
     context.beginPath();
     context.moveTo(100, 621);
     context.lineTo(-1020, 621);
@@ -3172,7 +3285,8 @@ function drawFrame() {
     context.lineTo(100, 621);
     context.save();
     context.clip();
-    context.transform(19.6490478515625, 0, 0, 19.7015380859375, -1040, -719);
+    //context.transform(19.6490478515625, 0, 0, 19.7015380859375, -1040, -719);
+    context.transform(19.6490478515625, 0, 0, 19.7015380859375, -1040, -720);
     context.transform(1.0169491525423728, 0, 0, 1.0144927536231885, -0.5, -0.5);
     let pattern72 = context.createPattern(image44, 'repeat');
     context.fillStyle = pattern72;
@@ -3191,7 +3305,8 @@ function drawFrame() {
     context.lineTo(640, -1240);
     context.save();
     context.clip();
-    context.transform(19.33319091796875, 0, 0, 19.45953369140625, 41, -1260);
+    //context.transform(19.33319091796875, 0, 0, 19.45953369140625, 41, -1260);
+    context.transform(19.33319091796875, 0, 0, 19.45953369140625, 40, -1260);
     context.transform(1.03125, 0, 0, 1.0256410256410255, -0.5, -0.5);
     let pattern73 = context.createPattern(image45, 'repeat');
     context.fillStyle = pattern73;
@@ -3212,7 +3327,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -3223,7 +3338,8 @@ function drawFrame() {
     context.lineTo(-120, -640);
     context.save();
     context.clip();
-    context.transform(-19.6429443359375, 0, 0, 19.5556640625, 1000, -659);
+    //context.transform(-19.6429443359375, 0, 0, 19.5556640625, 1000, -659);
+    context.transform(-19.6429443359375, 0, 0, 19.5556640625, 1000, -660);
     context.transform(1.0172413793103448, 0, 0, 1.0212765957446808, -0.5, -0.5);
     let pattern287 = context.createPattern(image150, 'repeat');
     context.fillStyle = pattern287;
@@ -3238,9 +3354,11 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(0.05, 0, 0, 0.05, 44.05, -28.05);
+    //context.transform(0.05, 0, 0, 0.05, 44.05, -28.05);
+    context.transform(0.05, 0, 0, 0.05, 44, -28);
     context.beginPath();
     context.moveTo(100, 621);
     context.lineTo(-1020, 621);
@@ -3249,7 +3367,8 @@ function drawFrame() {
     context.lineTo(100, 621);
     context.save();
     context.clip();
-    context.transform(19.6490478515625, 0, 0, 19.7015380859375, -1040, -719);
+    //context.transform(19.6490478515625, 0, 0, 19.7015380859375, -1040, -719);
+    context.transform(19.6490478515625, 0, 0, 19.7015380859375, -1040, -720);
     context.transform(1.0169491525423728, 0, 0, 1.0144927536231885, -0.5, -0.5);
     let pattern74 = context.createPattern(image44, 'repeat');
     context.fillStyle = pattern74;
@@ -3268,7 +3387,8 @@ function drawFrame() {
     context.lineTo(640, -1240);
     context.save();
     context.clip();
-    context.transform(19.33319091796875, 0, 0, 19.45953369140625, 41, -1260);
+    //context.transform(19.33319091796875, 0, 0, 19.45953369140625, 41, -1260);
+    context.transform(19.33319091796875, 0, 0, 19.45953369140625, 40, -1260);
     context.transform(1.03125, 0, 0, 1.0256410256410255, -0.5, -0.5);
     let pattern75 = context.createPattern(image45, 'repeat');
     context.fillStyle = pattern75;
@@ -3289,7 +3409,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -3315,9 +3435,11 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(0.05, 0, 0, 0.05, 44, -27.95);
+    //context.transform(0.05, 0, 0, 0.05, 44, -27.95);
+    context.transform(0.05, 0, 0, 0.05, 44, -28);
     context.beginPath();
     context.moveTo(100, 460);
     context.lineTo(-980, 460);
@@ -3345,7 +3467,8 @@ function drawFrame() {
     context.lineTo(60, -640);
     context.save();
     context.clip();
-    context.transform(19.52392578125, 0, 0, 19.41162109375, 40, -1319);
+    //context.transform(19.52392578125, 0, 0, 19.41162109375, 40, -1319);
+    context.transform(19.52392578125, 0, 0, 19.41162109375, 40, -1320);
     context.transform(1.0227272727272727, 0, 0, 1.0277777777777777, -0.5, -0.5);
     let pattern77 = context.createPattern(image47, 'repeat');
     context.fillStyle = pattern77;
@@ -3366,7 +3489,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -3377,7 +3500,8 @@ function drawFrame() {
     context.lineTo(-120, -640);
     context.save();
     context.clip();
-    context.transform(-19.6429443359375, 0, 0, 19.5556640625, 1000, -659);
+    //context.transform(-19.6429443359375, 0, 0, 19.5556640625, 1000, -659);
+    context.transform(-19.6429443359375, 0, 0, 19.5556640625, 1000, -660);
     context.transform(1.0172413793103448, 0, 0, 1.0212765957446808, -0.5, -0.5);
     let pattern289 = context.createPattern(image150, 'repeat');
     context.fillStyle = pattern289;
@@ -3392,9 +3516,11 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(0.05, 0, 0, 0.05, 44.05, -28.05);
+    //context.transform(0.05, 0, 0, 0.05, 44.05, -28.05);
+    context.transform(0.05, 0, 0, 0.05, 44, -28);
     context.beginPath();
     context.moveTo(100, 621);
     context.lineTo(-1020, 621);
@@ -3403,7 +3529,8 @@ function drawFrame() {
     context.lineTo(100, 621);
     context.save();
     context.clip();
-    context.transform(19.6490478515625, 0, 0, 19.7015380859375, -1040, -719);
+    //context.transform(19.6490478515625, 0, 0, 19.7015380859375, -1040, -719);
+    context.transform(19.6490478515625, 0, 0, 19.7015380859375, -1040, -720);
     context.transform(1.0169491525423728, 0, 0, 1.0144927536231885, -0.5, -0.5);
     let pattern78 = context.createPattern(image44, 'repeat');
     context.fillStyle = pattern78;
@@ -3422,7 +3549,8 @@ function drawFrame() {
     context.lineTo(640, -1240);
     context.save();
     context.clip();
-    context.transform(19.33319091796875, 0, 0, 19.45953369140625, 41, -1260);
+    //context.transform(19.33319091796875, 0, 0, 19.45953369140625, 41, -1260);
+    context.transform(19.33319091796875, 0, 0, 19.45953369140625, 40, -1260);
     context.transform(1.03125, 0, 0, 1.0256410256410255, -0.5, -0.5);
     let pattern79 = context.createPattern(image45, 'repeat');
     context.fillStyle = pattern79;
@@ -3443,7 +3571,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -3469,7 +3597,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -3480,7 +3609,8 @@ function drawFrame() {
     context.lineTo(920, -1240);
     context.save();
     context.clip();
-    context.transform(19.66094970703125, 0, 0, 19.705810546875, -260, -1259);
+    //context.transform(19.66094970703125, 0, 0, 19.705810546875, -260, -1259);
+    context.transform(19.66094970703125, 0, 0, 19.705810546875, -260, -1260);
     context.transform(1.0163934426229508, 0, 0, 1.0142857142857142, -0.5, -0.5);
     let pattern80 = context.createPattern(image42, 'repeat');
     context.fillStyle = pattern80;
@@ -3490,7 +3620,8 @@ function drawFrame() {
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 880, -561);
+    //context.transform(1, 0, 0, 1, 880, -561);
+    context.transform(1, 0, 0, 1, 880, -560);
     context.beginPath();
     context.moveTo(-359, -679);
     context.lineTo(-359, 81);
@@ -3499,7 +3630,8 @@ function drawFrame() {
     context.lineTo(-359, -679);
     context.save();
     context.clip();
-    context.transform(19.09088134765625, 0, 0, 19.4873046875, -799, -699);
+    //context.transform(19.09088134765625, 0, 0, 19.4873046875, -799, -699);
+    context.transform(19.09088134765625, 0, 0, 19.4873046875, -800, -700);
     context.transform(1.0416666666666667, 0, 0, 1.024390243902439, -0.5, -0.5);
     let pattern81 = context.createPattern(image43, 'repeat');
     context.fillStyle = pattern81;
@@ -3520,7 +3652,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 44, -28);
     context.beginPath();
@@ -3531,7 +3663,8 @@ function drawFrame() {
     context.lineTo(-100, 20);
     context.save();
     context.clip();
-    context.transform(-19.60784912109375, 0, 0, 19.5556640625, -81, 0);
+    //context.transform(-19.60784912109375, 0, 0, 19.5556640625, -81, 0);
+    context.transform(-19.60784912109375, 0, 0, 19.5556640625, -80, 0);
     context.transform(1.0188679245283019, 0, 0, 1.0212765957446808, -0.5, -0.5);
     let pattern291 = context.createPattern(image152, 'repeat');
     context.fillStyle = pattern291;
@@ -3546,7 +3679,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 44, -28);
     context.beginPath();
@@ -3576,7 +3710,8 @@ function drawFrame() {
     context.lineTo(-380, -580);
     context.save();
     context.clip();
-    context.transform(19.3939208984375, 0, 0, 19.45953369140625, -1039, -600);
+    //context.transform(19.3939208984375, 0, 0, 19.45953369140625, -1039, -600);
+    context.transform(19.3939208984375, 0, 0, 19.45953369140625, -1040, -600);
     context.transform(1.0285714285714285, 0, 0, 1.0256410256410255, -0.5, -0.5);
     let pattern83 = context.createPattern(image41, 'repeat');
     context.fillStyle = pattern83;
@@ -3597,7 +3732,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -3608,7 +3743,8 @@ function drawFrame() {
     context.lineTo(-500, -360);
     context.save();
     context.clip();
-    context.transform(-19.62249755859375, 0, 0, 19.45953369140625, 559, -380);
+    //context.transform(-19.62249755859375, 0, 0, 19.45953369140625, 559, -380);
+    context.transform(-19.62249755859375, 0, 0, 19.45953369140625, 560, -380);
     context.transform(1.018181818181818, 0, 0, 1.0256410256410255, -0.5, -0.5);
     let pattern292 = context.createPattern(image149, 'repeat');
     context.fillStyle = pattern292;
@@ -3623,7 +3759,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 44, -28);
     context.beginPath();
@@ -3653,7 +3790,8 @@ function drawFrame() {
     context.lineTo(440, -360);
     context.save();
     context.clip();
-    context.transform(19.5123291015625, 0, 0, 19.41162109375, -380, -1039);
+    //context.transform(19.5123291015625, 0, 0, 19.41162109375, -380, -1039);
+    context.transform(19.5123291015625, 0, 0, 19.41162109375, -380, -1040);
     context.transform(1.0232558139534884, 0, 0, 1.0277777777777777, -0.5, -0.5);
     let pattern85 = context.createPattern(image39, 'repeat');
     context.fillStyle = pattern85;
@@ -3674,7 +3812,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -3700,7 +3838,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -3730,7 +3869,8 @@ function drawFrame() {
     context.lineTo(360, -299);
     context.save();
     context.clip();
-    context.transform(19.59197998046875, 0, 0, 19.25933837890625, -619, -839);
+    //context.transform(19.59197998046875, 0, 0, 19.25933837890625, -619, -839);
+    context.transform(19.59197998046875, 0, 0, 19.25933837890625, -620, -840);
     context.transform(1.0196078431372548, 0, 0, 1.0344827586206897, -0.5, -0.5);
     let pattern87 = context.createPattern(image49, 'repeat');
     context.fillStyle = pattern87;
@@ -3751,7 +3891,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -3777,7 +3917,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -3807,7 +3948,8 @@ function drawFrame() {
     context.lineTo(320, -280);
     context.save();
     context.clip();
-    context.transform(19.59991455078125, 0, 0, 19.23065185546875, -679, -799);
+    //context.transform(19.59991455078125, 0, 0, 19.23065185546875, -679, -799);
+    context.transform(19.59991455078125, 0, 0, 19.23065185546875, -680, -800);
     context.transform(1.0192307692307692, 0, 0, 1.0357142857142858, -0.5, -0.5);
     let pattern89 = context.createPattern(image51, 'repeat');
     context.fillStyle = pattern89;
@@ -3828,7 +3970,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -3854,7 +3996,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -3884,7 +4027,8 @@ function drawFrame() {
     context.lineTo(220, -200);
     context.save();
     context.clip();
-    context.transform(19.58343505859375, 0, 0, 19.310302734375, -740, -779);
+    //context.transform(19.58343505859375, 0, 0, 19.310302734375, -740, -779);
+    context.transform(19.58343505859375, 0, 0, 19.310302734375, -740, -780);
     context.transform(1.02, 0, 0, 1.032258064516129, -0.5, -0.5);
     let pattern91 = context.createPattern(image53, 'repeat');
     context.fillStyle = pattern91;
@@ -3905,7 +4049,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -3916,7 +4060,8 @@ function drawFrame() {
     context.lineTo(100, 620);
     context.save();
     context.clip();
-    context.transform(19.63623046875, 0, 0, 19.444580078125, -1000, -99);
+    //context.transform(19.63623046875, 0, 0, 19.444580078125, -1000, -99);
+    context.transform(19.63623046875, 0, 0, 19.444580078125, -1000, -100);
     context.transform(1.0175438596491229, 0, 0, 1.0263157894736843, -0.5, -0.5);
     let pattern296 = context.createPattern(image145, 'repeat');
     context.fillStyle = pattern296;
@@ -3931,7 +4076,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -3982,7 +4128,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4008,7 +4154,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4019,7 +4166,8 @@ function drawFrame() {
     context.lineTo(100, 621);
     context.save();
     context.clip();
-    context.transform(19.6490478515625, 0, 0, 19.7015380859375, -1040, -719);
+    //context.transform(19.6490478515625, 0, 0, 19.7015380859375, -1040, -719);
+    context.transform(19.6490478515625, 0, 0, 19.7015380859375, -1040, -720);
     context.transform(1.0169491525423728, 0, 0, 1.0144927536231885, -0.5, -0.5);
     let pattern94 = context.createPattern(image44, 'repeat');
     context.fillStyle = pattern94;
@@ -4038,7 +4186,8 @@ function drawFrame() {
     context.lineTo(-239, -679);
     context.save();
     context.clip();
-    context.transform(19.33319091796875, 0, 0, 19.45953369140625, -839, -699);
+    //context.transform(19.33319091796875, 0, 0, 19.45953369140625, -839, -699);
+    context.transform(19.33319091796875, 0, 0, 19.45953369140625, -840, -700);
     context.transform(1.03125, 0, 0, 1.0256410256410255, -0.5, -0.5);
     let pattern95 = context.createPattern(image45, 'repeat');
     context.fillStyle = pattern95;
@@ -4059,7 +4208,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4085,7 +4234,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4115,7 +4265,8 @@ function drawFrame() {
     context.lineTo(-359, -679);
     context.save();
     context.clip();
-    context.transform(19.09088134765625, 0, 0, 19.4873046875, -799, -699);
+    //context.transform(19.09088134765625, 0, 0, 19.4873046875, -799, -699);
+    context.transform(19.09088134765625, 0, 0, 19.4873046875, -800, -700);
     context.transform(1.0416666666666667, 0, 0, 1.024390243902439, -0.5, -0.5);
     let pattern97 = context.createPattern(image43, 'repeat');
     context.fillStyle = pattern97;
@@ -4136,7 +4287,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4147,7 +4298,8 @@ function drawFrame() {
     context.lineTo(-100, 20);
     context.save();
     context.clip();
-    context.transform(-19.60784912109375, 0, 0, 19.5556640625, -81, 0);
+    //context.transform(-19.60784912109375, 0, 0, 19.5556640625, -81, 0);
+    context.transform(-19.60784912109375, 0, 0, 19.5556640625, -80, 0);
     context.transform(1.0188679245283019, 0, 0, 1.0212765957446808, -0.5, -0.5);
     let pattern299 = context.createPattern(image152, 'repeat');
     context.fillStyle = pattern299;
@@ -4162,7 +4314,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4192,7 +4345,8 @@ function drawFrame() {
     context.lineTo(-380, -580);
     context.save();
     context.clip();
-    context.transform(19.3939208984375, 0, 0, 19.45953369140625, -1039, -600);
+    //context.transform(19.3939208984375, 0, 0, 19.45953369140625, -1039, -600);
+    context.transform(19.3939208984375, 0, 0, 19.45953369140625, -1040, -600);
     context.transform(1.0285714285714285, 0, 0, 1.0256410256410255, -0.5, -0.5);
     let pattern99 = context.createPattern(image41, 'repeat');
     context.fillStyle = pattern99;
@@ -4213,7 +4367,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4239,7 +4393,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4269,7 +4424,8 @@ function drawFrame() {
     context.lineTo(-440, -460);
     context.save();
     context.clip();
-    context.transform(19.5123291015625, 0, 0, 19.41162109375, -1259, -480);
+    //context.transform(19.5123291015625, 0, 0, 19.41162109375, -1259, -480);
+    context.transform(19.5123291015625, 0, 0, 19.41162109375, -1260, -480);
     context.transform(1.0232558139534884, 0, 0, 1.0277777777777777, -0.5, -0.5);
     let pattern101 = context.createPattern(image39, 'repeat');
     context.fillStyle = pattern101;
@@ -4290,7 +4446,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4316,7 +4472,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4346,7 +4503,8 @@ function drawFrame() {
     context.lineTo(-440, -460);
     context.save();
     context.clip();
-    context.transform(19.5123291015625, 0, 0, 19.41162109375, -1259, -480);
+    //context.transform(19.5123291015625, 0, 0, 19.41162109375, -1259, -480);
+    context.transform(19.5123291015625, 0, 0, 19.41162109375, -1260, -480);
     context.transform(1.0232558139534884, 0, 0, 1.0277777777777777, -0.5, -0.5);
     let pattern103 = context.createPattern(image39, 'repeat');
     context.fillStyle = pattern103;
@@ -4367,7 +4525,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4393,7 +4551,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4404,7 +4563,8 @@ function drawFrame() {
     context.lineTo(440, 360);
     context.save();
     context.clip();
-    context.transform(19.59991455078125, 0, 0, 19.69696044921875, -560, -959);
+    //context.transform(19.59991455078125, 0, 0, 19.69696044921875, -560, -959);
+    context.transform(19.59991455078125, 0, 0, 19.69696044921875, -560, -960);
     context.transform(1.0192307692307692, 0, 0, 1.0147058823529411, -0.5, -0.5);
     let pattern104 = context.createPattern(image54, 'repeat');
     context.fillStyle = pattern104;
@@ -4423,7 +4583,8 @@ function drawFrame() {
     context.lineTo(361, -260);
     context.save();
     context.clip();
-    context.transform(19.23065185546875, 0, 0, 19.444580078125, -159, -980);
+    //context.transform(19.23065185546875, 0, 0, 19.444580078125, -159, -980);
+    context.transform(19.23065185546875, 0, 0, 19.444580078125, -160, -980);
     context.transform(1.0357142857142858, 0, 0, 1.0263157894736843, -0.5, -0.5);
     let pattern105 = context.createPattern(image55, 'repeat');
     context.fillStyle = pattern105;
@@ -4444,7 +4605,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4470,7 +4631,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4481,7 +4643,8 @@ function drawFrame() {
     context.lineTo(580, -959);
     context.save();
     context.clip();
-    context.transform(19.6722412109375, 0, 0, 19.7015380859375, -640, -979);
+    //context.transform(19.6722412109375, 0, 0, 19.7015380859375, -640, -979);
+    context.transform(19.6722412109375, 0, 0, 19.7015380859375, -640, -980);
     context.transform(1.0158730158730158, 0, 0, 1.0144927536231885, -0.5, -0.5);
     let pattern106 = context.createPattern(image56, 'repeat');
     context.fillStyle = pattern106;
@@ -4500,7 +4663,8 @@ function drawFrame() {
     context.lineTo(440, -299);
     context.save();
     context.clip();
-    context.transform(19.310302734375, 0, 0, 19.3939208984375, -139, -959);
+    //context.transform(19.310302734375, 0, 0, 19.3939208984375, -139, -959);
+    context.transform(19.310302734375, 0, 0, 19.3939208984375, -140, -960);
     context.transform(1.032258064516129, 0, 0, 1.0285714285714285, -0.5, -0.5);
     let pattern107 = context.createPattern(image57, 'repeat');
     context.fillStyle = pattern107;
@@ -4521,7 +4685,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4547,7 +4711,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4558,7 +4723,8 @@ function drawFrame() {
     context.lineTo(820, -940);
     context.save();
     context.clip();
-    context.transform(19.7222900390625, 0, 0, 19.69696044921875, -620, -959);
+    //context.transform(19.7222900390625, 0, 0, 19.69696044921875, -620, -959);
+    context.transform(19.7222900390625, 0, 0, 19.69696044921875, -620, -960);
     context.transform(1.0135135135135136, 0, 0, 1.0147058823529411, -0.5, -0.5);
     let pattern108 = context.createPattern(image58, 'repeat');
     context.fillStyle = pattern108;
@@ -4577,7 +4743,8 @@ function drawFrame() {
     context.lineTo(501, -360);
     context.save();
     context.clip();
-    context.transform(19.28558349609375, 0, 0, 19.23065185546875, -59, -879);
+    //context.transform(19.28558349609375, 0, 0, 19.23065185546875, -59, -879);
+    context.transform(19.28558349609375, 0, 0, 19.23065185546875, -60, -880);
     context.transform(1.0333333333333334, 0, 0, 1.0357142857142858, -0.5, -0.5);
     let pattern109 = context.createPattern(image59, 'repeat');
     context.fillStyle = pattern109;
@@ -4598,7 +4765,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4624,7 +4791,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4654,7 +4822,8 @@ function drawFrame() {
     context.lineTo(520, -339);
     context.save();
     context.clip();
-    context.transform(19.28558349609375, 0, 0, 19.47357177734375, -40, -1099);
+    //context.transform(19.28558349609375, 0, 0, 19.47357177734375, -40, -1099);
+    context.transform(19.28558349609375, 0, 0, 19.47357177734375, -40, -1100);
     context.transform(1.0333333333333334, 0, 0, 1.025, -0.5, -0.5);
     let pattern111 = context.createPattern(image61, 'repeat');
     context.fillStyle = pattern111;
@@ -4675,7 +4844,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4701,7 +4870,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4712,7 +4882,8 @@ function drawFrame() {
     context.lineTo(661, -1839);
     context.save();
     context.clip();
-    context.transform(19.71435546875, 0, 0, 19.82147216796875, -739, -1859);
+    //context.transform(19.71435546875, 0, 0, 19.82147216796875, -739, -1859);
+    context.transform(19.71435546875, 0, 0, 19.82147216796875, -740, -1860);
     context.transform(1.0138888888888888, 0, 0, 1.0087719298245614, -0.5, -0.5);
     let pattern112 = context.createPattern(image62, 'repeat');
     context.fillStyle = pattern112;
@@ -4731,7 +4902,8 @@ function drawFrame() {
     context.lineTo(460, -240);
     context.save();
     context.clip();
-    context.transform(19.5001220703125, 0, 0, 19.52392578125, -340, -1079);
+    //context.transform(19.5001220703125, 0, 0, 19.52392578125, -340, -1079);
+    context.transform(19.5001220703125, 0, 0, 19.52392578125, -340, -1080);
     context.transform(1.0238095238095237, 0, 0, 1.0227272727272727, -0.5, -0.5);
     let pattern113 = context.createPattern(image63, 'repeat');
     context.fillStyle = pattern113;
@@ -4752,7 +4924,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4763,7 +4935,8 @@ function drawFrame() {
     context.lineTo(581, 620);
     context.save();
     context.clip();
-    context.transform(19.71435546875, 0, 0, 19.615478515625, -819, -420);
+    //context.transform(19.71435546875, 0, 0, 19.615478515625, -819, -420);
+    context.transform(19.71435546875, 0, 0, 19.615478515625, -820, -420);
     context.transform(1.0138888888888888, 0, 0, 1.0185185185185186, -0.5, -0.5);
     let pattern307 = context.createPattern(image168, 'repeat');
     context.fillStyle = pattern307;
@@ -4778,7 +4951,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4789,7 +4963,8 @@ function drawFrame() {
     context.lineTo(581, -840);
     context.save();
     context.clip();
-    context.transform(19.71435546875, 0, 0, 19.6875, -819, -860);
+    //context.transform(19.71435546875, 0, 0, 19.6875, -819, -860);
+    context.transform(19.71435546875, 0, 0, 19.6875, -820, -860);
     context.transform(1.0138888888888888, 0, 0, 1.0151515151515151, -0.5, -0.5);
     let pattern114 = context.createPattern(image64, 'repeat');
     context.fillStyle = pattern114;
@@ -4808,7 +4983,8 @@ function drawFrame() {
     context.lineTo(280, -80);
     context.save();
     context.clip();
-    context.transform(19.615478515625, 0, 0, 19.4287109375, -759, -780);
+    //context.transform(19.615478515625, 0, 0, 19.4287109375, -759, -780);
+    context.transform(19.615478515625, 0, 0, 19.4287109375, -760, -780);
     context.transform(1.0185185185185186, 0, 0, 1.027027027027027, -0.5, -0.5);
     let pattern115 = context.createPattern(image65, 'repeat');
     context.fillStyle = pattern115;
@@ -4829,7 +5005,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4855,7 +5031,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4885,7 +5062,8 @@ function drawFrame() {
     context.lineTo(341, -160);
     context.save();
     context.clip();
-    context.transform(19.6295166015625, 0, 0, 19.33319091796875, -739, -760);
+    //context.transform(19.6295166015625, 0, 0, 19.33319091796875, -739, -760);
+    context.transform(19.6295166015625, 0, 0, 19.33319091796875, -740, -760);
     context.transform(1.0178571428571428, 0, 0, 1.03125, -0.5, -0.5);
     let pattern117 = context.createPattern(image67, 'repeat');
     context.fillStyle = pattern117;
@@ -4906,7 +5084,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4917,7 +5095,8 @@ function drawFrame() {
     context.lineTo(660, 460);
     context.save();
     context.clip();
-    context.transform(19.7369384765625, 0, 0, 19.54559326171875, -860, -419);
+    //context.transform(19.7369384765625, 0, 0, 19.54559326171875, -860, -419);
+    context.transform(19.7369384765625, 0, 0, 19.54559326171875, -860, -420);
     context.transform(1.0128205128205128, 0, 0, 1.0217391304347827, -0.5, -0.5);
     let pattern309 = context.createPattern(image170, 'repeat');
     context.fillStyle = pattern309;
@@ -4932,7 +5111,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -4983,7 +5163,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -5009,7 +5189,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -5039,7 +5220,8 @@ function drawFrame() {
     context.lineTo(360, -180);
     context.save();
     context.clip();
-    context.transform(19.41162109375, 0, 0, 19.4873046875, -320, -959);
+    //context.transform(19.41162109375, 0, 0, 19.4873046875, -320, -959);
+    context.transform(19.41162109375, 0, 0, 19.4873046875, -320, -960);
     context.transform(1.0277777777777777, 0, 0, 1.024390243902439, -0.5, -0.5);
     let pattern121 = context.createPattern(image71, 'repeat');
     context.fillStyle = pattern121;
@@ -5060,7 +5242,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -5086,7 +5268,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -5116,7 +5299,8 @@ function drawFrame() {
     context.lineTo(360, -180);
     context.save();
     context.clip();
-    context.transform(19.41162109375, 0, 0, 19.4873046875, -320, -959);
+    //context.transform(19.41162109375, 0, 0, 19.4873046875, -320, -959);
+    context.transform(19.41162109375, 0, 0, 19.4873046875, -320, -960);
     context.transform(1.0277777777777777, 0, 0, 1.024390243902439, -0.5, -0.5);
     let pattern123 = context.createPattern(image71, 'repeat');
     context.fillStyle = pattern123;
@@ -5137,7 +5321,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -5148,7 +5332,8 @@ function drawFrame() {
     context.lineTo(660, 460);
     context.save();
     context.clip();
-    context.transform(19.7369384765625, 0, 0, 19.54559326171875, -860, -419);
+    //context.transform(19.7369384765625, 0, 0, 19.54559326171875, -860, -419);
+    context.transform(19.7369384765625, 0, 0, 19.54559326171875, -860, -420);
     context.transform(1.0128205128205128, 0, 0, 1.0217391304347827, -0.5, -0.5);
     let pattern312 = context.createPattern(image170, 'repeat');
     context.fillStyle = pattern312;
@@ -5163,7 +5348,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -5214,7 +5400,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -5225,7 +5411,8 @@ function drawFrame() {
     context.lineTo(-840, 300);
     context.save();
     context.clip();
-    context.transform(-19.7589111328125, 0, 0, -19.28558349609375, 820, 319);
+    //context.transform(-19.7589111328125, 0, 0, -19.28558349609375, 820, 319);
+    context.transform(-19.7589111328125, 0, 0, -19.28558349609375, 820, 320);
     context.transform(1.011764705882353, 0, 0, 1.0333333333333334, -0.5, -0.5);
     let pattern313 = context.createPattern(image144, 'repeat');
     context.fillStyle = pattern313;
@@ -5240,7 +5427,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -5270,7 +5458,8 @@ function drawFrame() {
     context.lineTo(480, -280);
     context.save();
     context.clip();
-    context.transform(19.60784912109375, 0, 0, 19.09088134765625, -539, -719);
+    //context.transform(19.60784912109375, 0, 0, 19.09088134765625, -539, -719);
+    context.transform(19.60784912109375, 0, 0, 19.09088134765625, -540, -720);
     context.transform(1.0188679245283019, 0, 0, 1.0416666666666667, -0.5, -0.5);
     let pattern127 = context.createPattern(image73, 'repeat');
     context.fillStyle = pattern127;
@@ -5291,7 +5480,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -5302,7 +5491,8 @@ function drawFrame() {
     context.lineTo(-560, -360);
     context.save();
     context.clip();
-    context.transform(-19.63623046875, 0, 0, 19.444580078125, 540, -379);
+    //context.transform(-19.63623046875, 0, 0, 19.444580078125, 540, -379);
+    context.transform(-19.63623046875, 0, 0, 19.444580078125, 540, -380);
     context.transform(1.0175438596491229, 0, 0, 1.0263157894736843, -0.5, -0.5);
     let pattern314 = context.createPattern(image145, 'repeat');
     context.fillStyle = pattern314;
@@ -5317,9 +5507,11 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(0.05, 0, 0, 0.05, 43.95, 28);
+    //context.transform(0.05, 0, 0, 0.05, 43.95, 28);
+    context.transform(0.05, 0, 0, 0.05, 44, 28);
     context.beginPath();
     context.moveTo(-319, -1620);
     context.lineTo(-319, -340);
@@ -5328,7 +5520,8 @@ function drawFrame() {
     context.lineTo(-319, -1620);
     context.save();
     context.clip();
-    context.transform(19.63623046875, 0, 0, 19.6923828125, -1419, -1640);
+    //context.transform(19.63623046875, 0, 0, 19.6923828125, -1419, -1640);
+    context.transform(19.63623046875, 0, 0, 19.6923828125, -1420, -1640);
     context.transform(1.0175438596491229, 0, 0, 1.0149253731343284, -0.5, -0.5);
     let pattern128 = context.createPattern(image74, 'repeat');
     context.fillStyle = pattern128;
@@ -5347,7 +5540,8 @@ function drawFrame() {
     context.lineTo(440, -319);
     context.save();
     context.clip();
-    context.transform(19.52392578125, 0, 0, 19.375, -399, -959);
+    //context.transform(19.52392578125, 0, 0, 19.375, -399, -959);
+    context.transform(19.52392578125, 0, 0, 19.375, -400, -960);
     context.transform(1.0227272727272727, 0, 0, 1.0294117647058822, -0.5, -0.5);
     let pattern129 = context.createPattern(image75, 'repeat');
     context.fillStyle = pattern129;
@@ -5368,9 +5562,10 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(-0.05, 0, 0, -0.05, 44.05, 28.05);
+    //context.transform(-0.05, 0, 0, -0.05, 44.05, 28.05);
+    context.transform(-0.05, 0, 0, -0.05, 44, 28);
     context.beginPath();
     context.moveTo(1361, 61);
     context.lineTo(1361, 741);
@@ -5379,7 +5574,8 @@ function drawFrame() {
     context.lineTo(1361, 61);
     context.save();
     context.clip();
-    context.transform(-19.7015380859375, 0, 0, 19.4287109375, 1380, 41);
+    //context.transform(-19.7015380859375, 0, 0, 19.4287109375, 1380, 41);
+    context.transform(-19.7015380859375, 0, 0, 19.4287109375, 1380, 40);
     context.transform(1.0144927536231885, 0, 0, 1.027027027027027, -0.5, -0.5);
     let pattern315 = context.createPattern(image146, 'repeat');
     context.fillStyle = pattern315;
@@ -5394,9 +5590,11 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(0.05, 0, 0, 0.05, 44, 27.95);
+    //context.transform(0.05, 0, 0, 0.05, 44, 27.95);
+    context.transform(0.05, 0, 0, 0.05, 44, 28);
     context.beginPath();
     context.moveTo(-60, -1539);
     context.lineTo(-60, -119);
@@ -5405,7 +5603,8 @@ function drawFrame() {
     context.lineTo(-60, -1539);
     context.save();
     context.clip();
-    context.transform(19.69696044921875, 0, 0, 19.7222900390625, -1380, -1559);
+    //context.transform(19.69696044921875, 0, 0, 19.7222900390625, -1380, -1559);
+    context.transform(19.69696044921875, 0, 0, 19.7222900390625, -1380, -1560);
     context.transform(1.0147058823529411, 0, 0, 1.0135135135135136, -0.5, -0.5);
     let pattern130 = context.createPattern(image76, 'repeat');
     context.fillStyle = pattern130;
@@ -5445,7 +5644,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -5456,7 +5655,8 @@ function drawFrame() {
     context.lineTo(-960, -600);
     context.save();
     context.clip();
-    context.transform(-19.71435546875, 0, 0, 19.5001220703125, 439, -620);
+    //context.transform(-19.71435546875, 0, 0, 19.5001220703125, 439, -620);
+    context.transform(-19.71435546875, 0, 0, 19.5001220703125, 440, -620);
     context.transform(1.0138888888888888, 0, 0, 1.0238095238095237, -0.5, -0.5);
     let pattern316 = context.createPattern(image147, 'repeat');
     context.fillStyle = pattern316;
@@ -5471,9 +5671,11 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(0.05, 0, 0, 0.05, 44.05, 28);
+    //context.transform(0.05, 0, 0, 0.05, 44.05, 28);
+    context.transform(0.05, 0, 0, 0.05, 44, 28);
     context.beginPath();
     context.moveTo(60, -80);
     context.lineTo(-1320, -80);
@@ -5501,7 +5703,8 @@ function drawFrame() {
     context.lineTo(-120, -1320);
     context.save();
     context.clip();
-    context.transform(19.59991455078125, 0, 0, 19.25933837890625, -1120, -1339);
+    //context.transform(19.59991455078125, 0, 0, 19.25933837890625, -1120, -1339);
+    context.transform(19.59991455078125, 0, 0, 19.25933837890625, -1120, -1340);
     context.transform(1.0192307692307692, 0, 0, 1.0344827586206897, -0.5, -0.5);
     let pattern133 = context.createPattern(image79, 'repeat');
     context.fillStyle = pattern133;
@@ -5522,7 +5725,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -5548,7 +5751,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -5599,7 +5803,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -5625,7 +5829,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -5676,7 +5881,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -5702,7 +5907,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -5713,7 +5919,8 @@ function drawFrame() {
     context.lineTo(980, 660);
     context.save();
     context.clip();
-    context.transform(19.62249755859375, 0, 0, 19.7296142578125, -79, -820);
+    //context.transform(19.62249755859375, 0, 0, 19.7296142578125, -79, -820);
+    context.transform(19.62249755859375, 0, 0, 19.7296142578125, -80, -820);
     context.transform(1.018181818181818, 0, 0, 1.013157894736842, -0.5, -0.5);
     let pattern138 = context.createPattern(image82, 'repeat');
     context.fillStyle = pattern138;
@@ -5732,7 +5939,8 @@ function drawFrame() {
     context.lineTo(0, -1219);
     context.save();
     context.clip();
-    context.transform(19.52392578125, 0, 0, 19.3548583984375, -840, -1239);
+    //context.transform(19.52392578125, 0, 0, 19.3548583984375, -840, -1239);
+    context.transform(19.52392578125, 0, 0, 19.3548583984375, -840, -1240);
     context.transform(1.0227272727272727, 0, 0, 1.0303030303030303, -0.5, -0.5);
     let pattern139 = context.createPattern(image83, 'repeat');
     context.fillStyle = pattern139;
@@ -5753,7 +5961,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -5779,7 +5987,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -5830,7 +6039,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -5841,7 +6050,8 @@ function drawFrame() {
     context.lineTo(-960, -600);
     context.save();
     context.clip();
-    context.transform(-19.71435546875, 0, 0, 19.5001220703125, 439, -620);
+    //context.transform(-19.71435546875, 0, 0, 19.5001220703125, 439, -620);
+    context.transform(-19.71435546875, 0, 0, 19.5001220703125, 440, -620);
     context.transform(1.0138888888888888, 0, 0, 1.0238095238095237, -0.5, -0.5);
     let pattern321 = context.createPattern(image147, 'repeat');
     context.fillStyle = pattern321;
@@ -5856,9 +6066,11 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(0.05, 0, 0, 0.05, 44.05, 28);
+    //context.transform(0.05, 0, 0, 0.05, 44.05, 28);
+    context.transform(0.05, 0, 0, 0.05, 44, 28);
     context.beginPath();
     context.moveTo(60, -80);
     context.lineTo(-1320, -80);
@@ -5886,7 +6098,8 @@ function drawFrame() {
     context.lineTo(-120, -1320);
     context.save();
     context.clip();
-    context.transform(19.59991455078125, 0, 0, 19.25933837890625, -1120, -1339);
+    //context.transform(19.59991455078125, 0, 0, 19.25933837890625, -1120, -1339);
+    context.transform(19.59991455078125, 0, 0, 19.25933837890625, -1120, -1340);
     context.transform(1.0192307692307692, 0, 0, 1.0344827586206897, -0.5, -0.5);
     let pattern143 = context.createPattern(image79, 'repeat');
     context.fillStyle = pattern143;
@@ -5907,9 +6120,10 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(-0.05, 0, 0, -0.05, 44.05, 28.05);
+    //context.transform(-0.05, 0, 0, -0.05, 44.05, 28.05);
+    context.transform(-0.05, 0, 0, -0.05, 44, 28);
     context.beginPath();
     context.moveTo(1361, 61);
     context.lineTo(1361, 741);
@@ -5918,7 +6132,8 @@ function drawFrame() {
     context.lineTo(1361, 61);
     context.save();
     context.clip();
-    context.transform(-19.7015380859375, 0, 0, 19.4287109375, 1380, 41);
+    //context.transform(-19.7015380859375, 0, 0, 19.4287109375, 1380, 41);
+    context.transform(-19.7015380859375, 0, 0, 19.4287109375, 1380, 40);
     context.transform(1.0144927536231885, 0, 0, 1.027027027027027, -0.5, -0.5);
     let pattern322 = context.createPattern(image146, 'repeat');
     context.fillStyle = pattern322;
@@ -5933,9 +6148,11 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(0.05, 0, 0, 0.05, 44, 27.95);
+    //context.transform(0.05, 0, 0, 0.05, 44, 27.95);
+    context.transform(0.05, 0, 0, 0.05, 44, 28);
     context.beginPath();
     context.moveTo(-60, -1539);
     context.lineTo(-60, -119);
@@ -5944,7 +6161,8 @@ function drawFrame() {
     context.lineTo(-60, -1539);
     context.save();
     context.clip();
-    context.transform(19.69696044921875, 0, 0, 19.7222900390625, -1380, -1559);
+    //context.transform(19.69696044921875, 0, 0, 19.7222900390625, -1380, -1559);
+    context.transform(19.69696044921875, 0, 0, 19.7222900390625, -1380, -1560);
     context.transform(1.0147058823529411, 0, 0, 1.0135135135135136, -0.5, -0.5);
     let pattern144 = context.createPattern(image76, 'repeat');
     context.fillStyle = pattern144;
@@ -5984,7 +6202,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -5995,7 +6213,8 @@ function drawFrame() {
     context.lineTo(-560, -360);
     context.save();
     context.clip();
-    context.transform(-19.63623046875, 0, 0, 19.444580078125, 540, -379);
+    //context.transform(-19.63623046875, 0, 0, 19.444580078125, 540, -379);
+    context.transform(-19.63623046875, 0, 0, 19.444580078125, 540, -380);
     context.transform(1.0175438596491229, 0, 0, 1.0263157894736843, -0.5, -0.5);
     let pattern323 = context.createPattern(image145, 'repeat');
     context.fillStyle = pattern323;
@@ -6010,9 +6229,11 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(0.05, 0, 0, 0.05, 43.95, 28);
+    //context.transform(0.05, 0, 0, 0.05, 43.95, 28);
+    context.transform(0.05, 0, 0, 0.05, 44, 28);
     context.beginPath();
     context.moveTo(-319, -1620);
     context.lineTo(-319, -340);
@@ -6021,7 +6242,8 @@ function drawFrame() {
     context.lineTo(-319, -1620);
     context.save();
     context.clip();
-    context.transform(19.63623046875, 0, 0, 19.6923828125, -1419, -1640);
+    //context.transform(19.63623046875, 0, 0, 19.6923828125, -1419, -1640);
+    context.transform(19.63623046875, 0, 0, 19.6923828125, -1420, -1640);
     context.transform(1.0175438596491229, 0, 0, 1.0149253731343284, -0.5, -0.5);
     let pattern146 = context.createPattern(image74, 'repeat');
     context.fillStyle = pattern146;
@@ -6040,7 +6262,8 @@ function drawFrame() {
     context.lineTo(440, -319);
     context.save();
     context.clip();
-    context.transform(19.52392578125, 0, 0, 19.375, -399, -959);
+    //context.transform(19.52392578125, 0, 0, 19.375, -399, -959);
+    context.transform(19.52392578125, 0, 0, 19.375, -400, -960);
     context.transform(1.0227272727272727, 0, 0, 1.0294117647058822, -0.5, -0.5);
     let pattern147 = context.createPattern(image75, 'repeat');
     context.fillStyle = pattern147;
@@ -6061,7 +6284,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -6087,7 +6310,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -6098,7 +6322,8 @@ function drawFrame() {
     context.lineTo(540, 180);
     context.save();
     context.clip();
-    context.transform(19.6490478515625, 0, 0, 19.705810546875, -599, -1180);
+    //context.transform(19.6490478515625, 0, 0, 19.705810546875, -599, -1180);
+    context.transform(19.6490478515625, 0, 0, 19.705810546875, -600, -1180);
     context.transform(1.0169491525423728, 0, 0, 1.0142857142857142, -0.5, -0.5);
     let pattern148 = context.createPattern(image84, 'repeat');
     context.fillStyle = pattern148;
@@ -6117,7 +6342,8 @@ function drawFrame() {
     context.lineTo(180, -420);
     context.save();
     context.clip();
-    context.transform(19.3939208984375, 0, 0, 19.3939208984375, -479, -1079);
+    //context.transform(19.3939208984375, 0, 0, 19.3939208984375, -479, -1079);
+    context.transform(19.3939208984375, 0, 0, 19.3939208984375, -480, -1080);
     context.transform(1.0285714285714285, 0, 0, 1.0285714285714285, -0.5, -0.5);
     let pattern149 = context.createPattern(image85, 'repeat');
     context.fillStyle = pattern149;
@@ -6138,7 +6364,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -6164,7 +6390,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -6175,7 +6402,8 @@ function drawFrame() {
     context.lineTo(460, 161);
     context.save();
     context.clip();
-    context.transform(19.6551513671875, 0, 0, 19.7100830078125, -700, -1219);
+    //context.transform(19.6551513671875, 0, 0, 19.7100830078125, -700, -1219);
+    context.transform(19.6551513671875, 0, 0, 19.7100830078125, -700, -1220);
     context.transform(1.0166666666666666, 0, 0, 1.0140845070422535, -0.5, -0.5);
     let pattern150 = context.createPattern(image86, 'repeat');
     context.fillStyle = pattern150;
@@ -6194,7 +6422,8 @@ function drawFrame() {
     context.lineTo(80, -459);
     context.save();
     context.clip();
-    context.transform(19.33319091796875, 0, 0, 19.3939208984375, -520, -1119);
+    //context.transform(19.33319091796875, 0, 0, 19.3939208984375, -520, -1119);
+    context.transform(19.33319091796875, 0, 0, 19.3939208984375, -520, -1120);
     context.transform(1.03125, 0, 0, 1.0285714285714285, -0.5, -0.5);
     let pattern151 = context.createPattern(image87, 'repeat');
     context.fillStyle = pattern151;
@@ -6215,7 +6444,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -6241,7 +6470,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -6252,7 +6482,8 @@ function drawFrame() {
     context.lineTo(321, 100);
     context.save();
     context.clip();
-    context.transform(19.60784912109375, 0, 0, 19.705810546875, -699, -1259);
+    //context.transform(19.60784912109375, 0, 0, 19.705810546875, -699, -1259);
+    context.transform(19.60784912109375, 0, 0, 19.705810546875, -700, -1260);
     context.transform(1.0188679245283019, 0, 0, 1.0142857142857142, -0.5, -0.5);
     let pattern152 = context.createPattern(image88, 'repeat');
     context.fillStyle = pattern152;
@@ -6271,7 +6502,8 @@ function drawFrame() {
     context.lineTo(40, -500);
     context.save();
     context.clip();
-    context.transform(19.3939208984375, 0, 0, 19.41162109375, -619, -1179);
+    //context.transform(19.3939208984375, 0, 0, 19.41162109375, -619, -1179);
+    context.transform(19.3939208984375, 0, 0, 19.41162109375, -620, -1180);
     context.transform(1.0285714285714285, 0, 0, 1.0277777777777777, -0.5, -0.5);
     let pattern153 = context.createPattern(image89, 'repeat');
     context.fillStyle = pattern153;
@@ -6292,7 +6524,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -6303,7 +6535,8 @@ function drawFrame() {
     context.lineTo(921, 640);
     context.save();
     context.clip();
-    context.transform(19.62249755859375, 0, 0, 19.45953369140625, -139, -99);
+    //context.transform(19.62249755859375, 0, 0, 19.45953369140625, -139, -99);
+    context.transform(19.62249755859375, 0, 0, 19.45953369140625, -140, -100);
     context.transform(1.018181818181818, 0, 0, 1.0256410256410255, -0.5, -0.5);
     let pattern327 = context.createPattern(image149, 'repeat');
     context.fillStyle = pattern327;
@@ -6318,7 +6551,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -6329,7 +6563,8 @@ function drawFrame() {
     context.lineTo(100, 101);
     context.save();
     context.clip();
-    context.transform(19.62249755859375, 0, 0, 19.7296142578125, -960, -1379);
+    //context.transform(19.62249755859375, 0, 0, 19.7296142578125, -960, -1379);
+    context.transform(19.62249755859375, 0, 0, 19.7296142578125, -960, -1380);
     context.transform(1.018181818181818, 0, 0, 1.013157894736842, -0.5, -0.5);
     let pattern154 = context.createPattern(image82, 'repeat');
     context.fillStyle = pattern154;
@@ -6348,7 +6583,8 @@ function drawFrame() {
     context.lineTo(0, -1219);
     context.save();
     context.clip();
-    context.transform(19.52392578125, 0, 0, 19.3548583984375, -840, -1239);
+    //context.transform(19.52392578125, 0, 0, 19.3548583984375, -840, -1239);
+    context.transform(19.52392578125, 0, 0, 19.3548583984375, -840, -1240);
     context.transform(1.0227272727272727, 0, 0, 1.0303030303030303, -0.5, -0.5);
     let pattern155 = context.createPattern(image83, 'repeat');
     context.fillStyle = pattern155;
@@ -6369,7 +6605,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -6380,7 +6616,8 @@ function drawFrame() {
     context.lineTo(-120, -80);
     context.save();
     context.clip();
-    context.transform(-19.7015380859375, 0, 0, 19.47357177734375, 1219, -99);
+    //context.transform(-19.7015380859375, 0, 0, 19.47357177734375, 1219, -99);
+    context.transform(-19.7015380859375, 0, 0, 19.47357177734375, 1220, -100);
     context.transform(1.0144927536231885, 0, 0, 1.025, -0.5, -0.5);
     let pattern328 = context.createPattern(image148, 'repeat');
     context.fillStyle = pattern328;
@@ -6395,7 +6632,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -6406,7 +6644,8 @@ function drawFrame() {
     context.lineTo(100, 21);
     context.save();
     context.clip();
-    context.transform(19.7015380859375, 0, 0, 19.7332763671875, -1239, -1479);
+    //context.transform(19.7015380859375, 0, 0, 19.7332763671875, -1239, -1479);
+    context.transform(19.7015380859375, 0, 0, 19.7332763671875, -1240, -1480);
     context.transform(1.0144927536231885, 0, 0, 1.0129870129870129, -0.5, -0.5);
     let pattern156 = context.createPattern(image80, 'repeat');
     context.fillStyle = pattern156;
@@ -6425,7 +6664,8 @@ function drawFrame() {
     context.lineTo(-79, -1280);
     context.save();
     context.clip();
-    context.transform(19.58343505859375, 0, 0, 19.28558349609375, -1039, -1300);
+    //context.transform(19.58343505859375, 0, 0, 19.28558349609375, -1039, -1300);
+    context.transform(19.58343505859375, 0, 0, 19.28558349609375, -1040, -1300);
     context.transform(1.02, 0, 0, 1.0333333333333334, -0.5, -0.5);
     let pattern157 = context.createPattern(image81, 'repeat');
     context.fillStyle = pattern157;
@@ -6446,7 +6686,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -6472,7 +6712,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -6502,7 +6743,8 @@ function drawFrame() {
     context.lineTo(-120, -1320);
     context.save();
     context.clip();
-    context.transform(19.59991455078125, 0, 0, 19.25933837890625, -1120, -1339);
+    //context.transform(19.59991455078125, 0, 0, 19.25933837890625, -1120, -1339);
+    context.transform(19.59991455078125, 0, 0, 19.25933837890625, -1120, -1340);
     context.transform(1.0192307692307692, 0, 0, 1.0344827586206897, -0.5, -0.5);
     let pattern159 = context.createPattern(image79, 'repeat');
     context.fillStyle = pattern159;
@@ -6523,7 +6765,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -6534,7 +6776,8 @@ function drawFrame() {
     context.lineTo(1361, 61);
     context.save();
     context.clip();
-    context.transform(-19.7015380859375, 0, 0, 19.4287109375, 1380, 41);
+    //context.transform(-19.7015380859375, 0, 0, 19.4287109375, 1380, 41);
+    context.transform(-19.7015380859375, 0, 0, 19.4287109375, 1380, 40);
     context.transform(1.0144927536231885, 0, 0, 1.027027027027027, -0.5, -0.5);
     let pattern330 = context.createPattern(image146, 'repeat');
     context.fillStyle = pattern330;
@@ -6549,7 +6792,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -6560,7 +6804,8 @@ function drawFrame() {
     context.lineTo(-60, -1539);
     context.save();
     context.clip();
-    context.transform(19.69696044921875, 0, 0, 19.7222900390625, -1380, -1559);
+    //context.transform(19.69696044921875, 0, 0, 19.7222900390625, -1380, -1559);
+    context.transform(19.69696044921875, 0, 0, 19.7222900390625, -1380, -1560);
     context.transform(1.0147058823529411, 0, 0, 1.0135135135135136, -0.5, -0.5);
     let pattern160 = context.createPattern(image76, 'repeat');
     context.fillStyle = pattern160;
@@ -6579,7 +6824,8 @@ function drawFrame() {
     context.lineTo(-220, -1360);
     context.save();
     context.clip();
-    context.transform(19.58343505859375, 0, 0, 19.28558349609375, -1179, -1380);
+    //context.transform(19.58343505859375, 0, 0, 19.28558349609375, -1179, -1380);
+    context.transform(19.58343505859375, 0, 0, 19.28558349609375, -1180, -1380);
     context.transform(1.02, 0, 0, 1.0333333333333334, -0.5, -0.5);
     let pattern161 = context.createPattern(image77, 'repeat');
     context.fillStyle = pattern161;
@@ -6600,7 +6846,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -6626,7 +6872,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -6637,7 +6884,8 @@ function drawFrame() {
     context.lineTo(-319, -1620);
     context.save();
     context.clip();
-    context.transform(19.63623046875, 0, 0, 19.6923828125, -1419, -1640);
+    //context.transform(19.63623046875, 0, 0, 19.6923828125, -1419, -1640);
+    context.transform(19.63623046875, 0, 0, 19.6923828125, -1420, -1640);
     context.transform(1.0175438596491229, 0, 0, 1.0149253731343284, -0.5, -0.5);
     let pattern162 = context.createPattern(image74, 'repeat');
     context.fillStyle = pattern162;
@@ -6656,7 +6904,8 @@ function drawFrame() {
     context.lineTo(-440, -1500);
     context.save();
     context.clip();
-    context.transform(19.52392578125, 0, 0, 19.375, -1280, -1519);
+    //context.transform(19.52392578125, 0, 0, 19.375, -1280, -1519);
+    context.transform(19.52392578125, 0, 0, 19.375, -1280, -1520);
     context.transform(1.0227272727272727, 0, 0, 1.0294117647058822, -0.5, -0.5);
     let pattern163 = context.createPattern(image75, 'repeat');
     context.fillStyle = pattern163;
@@ -6677,7 +6926,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -6703,7 +6952,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -6714,7 +6964,8 @@ function drawFrame() {
     context.lineTo(-319, -1620);
     context.save();
     context.clip();
-    context.transform(19.63623046875, 0, 0, 19.6923828125, -1419, -1640);
+    //context.transform(19.63623046875, 0, 0, 19.6923828125, -1419, -1640);
+    context.transform(19.63623046875, 0, 0, 19.6923828125, -1420, -1640);
     context.transform(1.0175438596491229, 0, 0, 1.0149253731343284, -0.5, -0.5);
     let pattern164 = context.createPattern(image74, 'repeat');
     context.fillStyle = pattern164;
@@ -6733,7 +6984,8 @@ function drawFrame() {
     context.lineTo(-440, -1500);
     context.save();
     context.clip();
-    context.transform(19.52392578125, 0, 0, 19.375, -1280, -1519);
+    //context.transform(19.52392578125, 0, 0, 19.375, -1280, -1519);
+    context.transform(19.52392578125, 0, 0, 19.375, -1280, -1520);
     context.transform(1.0227272727272727, 0, 0, 1.0294117647058822, -0.5, -0.5);
     let pattern165 = context.createPattern(image75, 'repeat');
     context.fillStyle = pattern165;
@@ -6754,7 +7006,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -6780,7 +7032,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -6810,7 +7063,8 @@ function drawFrame() {
     context.lineTo(520, -240);
     context.save();
     context.clip();
-    context.transform(19.62249755859375, 0, 0, 19.25933837890625, -540, -779);
+    //context.transform(19.62249755859375, 0, 0, 19.25933837890625, -540, -779);
+    context.transform(19.62249755859375, 0, 0, 19.25933837890625, -540, -780);
     context.transform(1.018181818181818, 0, 0, 1.0344827586206897, -0.5, -0.5);
     let pattern167 = context.createPattern(image91, 'repeat');
     context.fillStyle = pattern167;
@@ -6831,7 +7085,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -6857,7 +7111,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -6908,7 +7163,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -6919,7 +7174,8 @@ function drawFrame() {
     context.lineTo(621, -420);
     context.save();
     context.clip();
-    context.transform(19.7296142578125, 0, 0, 19.52392578125, -859, -440);
+    //context.transform(19.7296142578125, 0, 0, 19.52392578125, -859, -440);
+    context.transform(19.7296142578125, 0, 0, 19.52392578125, -860, -440);
     context.transform(1.013157894736842, 0, 0, 1.0227272727272727, -0.5, -0.5);
     let pattern335 = context.createPattern(image155, 'repeat');
     context.fillStyle = pattern335;
@@ -6934,7 +7190,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -6985,7 +7242,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -6996,7 +7253,8 @@ function drawFrame() {
     context.lineTo(940, -719);
     context.save();
     context.clip();
-    context.transform(19.83184814453125, 0, 0, 19.59991455078125, -1440, -739);
+    //context.transform(19.83184814453125, 0, 0, 19.59991455078125, -1440, -739);
+    context.transform(19.83184814453125, 0, 0, 19.59991455078125, -1440, -740);
     context.transform(1.0082644628099173, 0, 0, 1.0192307692307692, -0.5, -0.5);
     let pattern336 = context.createPattern(image156, 'repeat');
     context.fillStyle = pattern336;
@@ -7011,7 +7269,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -7022,7 +7281,8 @@ function drawFrame() {
     context.lineTo(1400, 340);
     context.save();
     context.clip();
-    context.transform(19.83184814453125, 0, 0, 19.67742919921875, -980, -899);
+    //context.transform(19.83184814453125, 0, 0, 19.67742919921875, -980, -899);
+    context.transform(19.83184814453125, 0, 0, 19.67742919921875, -980, -900);
     context.transform(1.0082644628099173, 0, 0, 1.015625, -0.5, -0.5);
     let pattern172 = context.createPattern(image96, 'repeat');
     context.fillStyle = pattern172;
@@ -7041,7 +7301,8 @@ function drawFrame() {
     context.lineTo(560, -199);
     context.save();
     context.clip();
-    context.transform(19.615478515625, 0, 0, 19.28558349609375, -480, -759);
+    //context.transform(19.615478515625, 0, 0, 19.28558349609375, -480, -759);
+    context.transform(19.615478515625, 0, 0, 19.28558349609375, -480, -760);
     context.transform(1.0185185185185186, 0, 0, 1.0333333333333334, -0.5, -0.5);
     let pattern173 = context.createPattern(image97, 'repeat');
     context.fillStyle = pattern173;
@@ -7062,7 +7323,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -7088,7 +7349,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -7099,7 +7361,8 @@ function drawFrame() {
     context.lineTo(-859, -2099);
     context.save();
     context.clip();
-    context.transform(19.7332763671875, 0, 0, 19.82452392578125, -879, -2119);
+    //context.transform(19.7332763671875, 0, 0, 19.82452392578125, -879, -2119);
+    context.transform(19.7332763671875, 0, 0, 19.82452392578125, -880, -2120);
     context.transform(1.0129870129870129, 0, 0, 1.0086206896551724, -0.5, -0.5);
     let pattern174 = context.createPattern(image98, 'repeat');
     context.fillStyle = pattern174;
@@ -7139,7 +7402,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -7165,7 +7428,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -7216,7 +7480,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -7242,7 +7506,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -7253,7 +7518,8 @@ function drawFrame() {
     context.lineTo(-740, -1059);
     context.save();
     context.clip();
-    context.transform(19.705810546875, 0, 0, 19.6722412109375, -760, -1079);
+    //context.transform(19.705810546875, 0, 0, 19.6722412109375, -760, -1079);
+    context.transform(19.705810546875, 0, 0, 19.6722412109375, -760, -1080);
     context.transform(1.0142857142857142, 0, 0, 1.0158730158730158, -0.5, -0.5);
     let pattern178 = context.createPattern(image102, 'repeat');
     context.fillStyle = pattern178;
@@ -7272,7 +7538,8 @@ function drawFrame() {
     context.lineTo(0, -1080);
     context.save();
     context.clip();
-    context.transform(19.25933837890625, 0, 0, 19.45953369140625, -540, -1099);
+    //context.transform(19.25933837890625, 0, 0, 19.45953369140625, -540, -1099);
+    context.transform(19.25933837890625, 0, 0, 19.45953369140625, -540, -1100);
     context.transform(1.0344827586206897, 0, 0, 1.0256410256410255, -0.5, -0.5);
     let pattern179 = context.createPattern(image103, 'repeat');
     context.fillStyle = pattern179;
@@ -7293,7 +7560,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -7319,7 +7586,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -7330,7 +7598,8 @@ function drawFrame() {
     context.lineTo(600, -1020);
     context.save();
     context.clip();
-    context.transform(19.69696044921875, 0, 0, 19.6826171875, -720, -1039);
+    //context.transform(19.69696044921875, 0, 0, 19.6826171875, -720, -1039);
+    context.transform(19.69696044921875, 0, 0, 19.6826171875, -720, -1040);
     context.transform(1.0147058823529411, 0, 0, 1.0153846153846153, -0.5, -0.5);
     let pattern180 = context.createPattern(image104, 'repeat');
     context.fillStyle = pattern180;
@@ -7349,7 +7618,8 @@ function drawFrame() {
     context.lineTo(240, -320);
     context.save();
     context.clip();
-    context.transform(19.45953369140625, 0, 0, 19.45953369140625, -499, -1059);
+    //context.transform(19.45953369140625, 0, 0, 19.45953369140625, -499, -1059);
+    context.transform(19.45953369140625, 0, 0, 19.45953369140625, -500, -1060);
     context.transform(1.0256410256410255, 0, 0, 1.0256410256410255, -0.5, -0.5);
     let pattern181 = context.createPattern(image105, 'repeat');
     context.fillStyle = pattern181;
@@ -7370,7 +7640,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -7381,7 +7651,8 @@ function drawFrame() {
     context.lineTo(840, -300);
     context.save();
     context.clip();
-    context.transform(19.7467041015625, 0, 0, 19.3939208984375, -740, -319);
+    //context.transform(19.7467041015625, 0, 0, 19.3939208984375, -740, -319);
+    context.transform(19.7467041015625, 0, 0, 19.3939208984375, -740, -320);
     context.transform(1.0123456790123457, 0, 0, 1.0285714285714285, -0.5, -0.5);
     let pattern341 = context.createPattern(image161, 'repeat');
     context.fillStyle = pattern341;
@@ -7396,7 +7667,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -7426,7 +7698,8 @@ function drawFrame() {
     context.lineTo(480, -300);
     context.save();
     context.clip();
-    context.transform(19.60784912109375, 0, 0, 19.28558349609375, -539, -859);
+    //context.transform(19.60784912109375, 0, 0, 19.28558349609375, -539, -859);
+    context.transform(19.60784912109375, 0, 0, 19.28558349609375, -540, -860);
     context.transform(1.0188679245283019, 0, 0, 1.0333333333333334, -0.5, -0.5);
     let pattern183 = context.createPattern(image107, 'repeat');
     context.fillStyle = pattern183;
@@ -7447,7 +7720,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -7458,7 +7731,8 @@ function drawFrame() {
     context.lineTo(840, -300);
     context.save();
     context.clip();
-    context.transform(19.7467041015625, 0, 0, 19.3939208984375, -740, -319);
+    //context.transform(19.7467041015625, 0, 0, 19.3939208984375, -740, -319);
+    context.transform(19.7467041015625, 0, 0, 19.3939208984375, -740, -320);
     context.transform(1.0123456790123457, 0, 0, 1.0285714285714285, -0.5, -0.5);
     let pattern342 = context.createPattern(image161, 'repeat');
     context.fillStyle = pattern342;
@@ -7473,7 +7747,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -7503,7 +7778,8 @@ function drawFrame() {
     context.lineTo(480, -300);
     context.save();
     context.clip();
-    context.transform(19.60784912109375, 0, 0, 19.28558349609375, -539, -859);
+    //context.transform(19.60784912109375, 0, 0, 19.28558349609375, -539, -859);
+    context.transform(19.60784912109375, 0, 0, 19.28558349609375, -540, -860);
     context.transform(1.0188679245283019, 0, 0, 1.0333333333333334, -0.5, -0.5);
     let pattern185 = context.createPattern(image107, 'repeat');
     context.fillStyle = pattern185;
@@ -7524,7 +7800,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -7550,7 +7826,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -7561,7 +7838,8 @@ function drawFrame() {
     context.lineTo(600, -1020);
     context.save();
     context.clip();
-    context.transform(19.69696044921875, 0, 0, 19.6826171875, -720, -1039);
+    //context.transform(19.69696044921875, 0, 0, 19.6826171875, -720, -1039);
+    context.transform(19.69696044921875, 0, 0, 19.6826171875, -720, -1040);
     context.transform(1.0147058823529411, 0, 0, 1.0153846153846153, -0.5, -0.5);
     let pattern186 = context.createPattern(image104, 'repeat');
     context.fillStyle = pattern186;
@@ -7580,7 +7858,8 @@ function drawFrame() {
     context.lineTo(240, -320);
     context.save();
     context.clip();
-    context.transform(19.45953369140625, 0, 0, 19.45953369140625, -499, -1059);
+    //context.transform(19.45953369140625, 0, 0, 19.45953369140625, -499, -1059);
+    context.transform(19.45953369140625, 0, 0, 19.45953369140625, -500, -1060);
     context.transform(1.0256410256410255, 0, 0, 1.0256410256410255, -0.5, -0.5);
     let pattern187 = context.createPattern(image105, 'repeat');
     context.fillStyle = pattern187;
@@ -7601,7 +7880,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -7627,7 +7906,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -7678,7 +7958,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -7689,7 +7969,8 @@ function drawFrame() {
     context.lineTo(-500, -360);
     context.save();
     context.clip();
-    context.transform(-19.62249755859375, 0, 0, 19.45953369140625, 559, -380);
+    //context.transform(-19.62249755859375, 0, 0, 19.45953369140625, 559, -380);
+    context.transform(-19.62249755859375, 0, 0, 19.45953369140625, 560, -380);
     context.transform(1.018181818181818, 0, 0, 1.0256410256410255, -0.5, -0.5);
     let pattern345 = context.createPattern(image149, 'repeat');
     context.fillStyle = pattern345;
@@ -7704,7 +7985,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, -44, 28);
     context.beginPath();
@@ -7734,7 +8016,8 @@ function drawFrame() {
     context.lineTo(360, -319);
     context.save();
     context.clip();
-    context.transform(19.52392578125, 0, 0, 19.375, -480, -959);
+    //context.transform(19.52392578125, 0, 0, 19.375, -480, -959);
+    context.transform(19.52392578125, 0, 0, 19.375, -480, -960);
     context.transform(1.0227272727272727, 0, 0, 1.0294117647058822, -0.5, -0.5);
     let pattern191 = context.createPattern(image111, 'repeat');
     context.fillStyle = pattern191;
@@ -7755,7 +8038,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, -44, 28);
     context.beginPath();
@@ -7766,7 +8049,8 @@ function drawFrame() {
     context.lineTo(-100, 20);
     context.save();
     context.clip();
-    context.transform(-19.60784912109375, 0, 0, 19.5556640625, -81, 0);
+    //context.transform(-19.60784912109375, 0, 0, 19.5556640625, -81, 0);
+    context.transform(-19.60784912109375, 0, 0, 19.5556640625, -80, 0);
     context.transform(1.0188679245283019, 0, 0, 1.0212765957446808, -0.5, -0.5);
     let pattern346 = context.createPattern(image152, 'repeat');
     context.fillStyle = pattern346;
@@ -7781,9 +8065,11 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(0.05, 0, 0, 0.05, -43.95, 27.95);
+    //context.transform(0.05, 0, 0, 0.05, -43.95, 27.95);
+    context.transform(0.05, 0, 0, 0.05, -44, 28);
     context.beginPath();
     context.moveTo(1100, -1519);
     context.lineTo(1100, -179);
@@ -7792,7 +8078,8 @@ function drawFrame() {
     context.lineTo(1100, -1519);
     context.save();
     context.clip();
-    context.transform(19.60784912109375, 0, 0, 19.705810546875, 80, -1539);
+    //context.transform(19.60784912109375, 0, 0, 19.705810546875, 80, -1539);
+    context.transform(19.60784912109375, 0, 0, 19.705810546875, 80, -1540);
     context.transform(1.0188679245283019, 0, 0, 1.0142857142857142, -0.5, -0.5);
     let pattern192 = context.createPattern(image112, 'repeat');
     context.fillStyle = pattern192;
@@ -7811,7 +8098,8 @@ function drawFrame() {
     context.lineTo(120, -220);
     context.save();
     context.clip();
-    context.transform(19.3939208984375, 0, 0, 19.3939208984375, -540, -879);
+    //context.transform(19.3939208984375, 0, 0, 19.3939208984375, -540, -879);
+    context.transform(19.3939208984375, 0, 0, 19.3939208984375, -540, -880);
     context.transform(1.0285714285714285, 0, 0, 1.0285714285714285, -0.5, -0.5);
     let pattern193 = context.createPattern(image113, 'repeat');
     context.fillStyle = pattern193;
@@ -7832,7 +8120,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -7858,7 +8146,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, -44, 28);
     context.beginPath();
@@ -7869,7 +8158,8 @@ function drawFrame() {
     context.lineTo(1100, -119);
     context.save();
     context.clip();
-    context.transform(19.66094970703125, 0, 0, 19.7100830078125, -80, -1499);
+    //context.transform(19.66094970703125, 0, 0, 19.7100830078125, -80, -1499);
+    context.transform(19.66094970703125, 0, 0, 19.7100830078125, -80, -1500);
     context.transform(1.0163934426229508, 0, 0, 1.0140845070422535, -0.5, -0.5);
     let pattern194 = context.createPattern(image114, 'repeat');
     context.fillStyle = pattern194;
@@ -7909,7 +8199,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -7920,7 +8210,8 @@ function drawFrame() {
     context.lineTo(-120, -640);
     context.save();
     context.clip();
-    context.transform(-19.6429443359375, 0, 0, 19.5556640625, 1000, -659);
+    //context.transform(-19.6429443359375, 0, 0, 19.5556640625, 1000, -659);
+    context.transform(-19.6429443359375, 0, 0, 19.5556640625, 1000, -660);
     context.transform(1.0172413793103448, 0, 0, 1.0212765957446808, -0.5, -0.5);
     let pattern348 = context.createPattern(image150, 'repeat');
     context.fillStyle = pattern348;
@@ -7935,7 +8226,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, -44, 28);
     context.beginPath();
@@ -7965,7 +8257,8 @@ function drawFrame() {
     context.lineTo(-660, -140);
     context.save();
     context.clip();
-    context.transform(19.3939208984375, 0, 0, 19.375, -679, -780);
+    //context.transform(19.3939208984375, 0, 0, 19.375, -679, -780);
+    context.transform(19.3939208984375, 0, 0, 19.375, -680, -780);
     context.transform(1.0285714285714285, 0, 0, 1.0294117647058822, -0.5, -0.5);
     let pattern197 = context.createPattern(image117, 'repeat');
     context.fillStyle = pattern197;
@@ -7986,7 +8279,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -7997,7 +8290,8 @@ function drawFrame() {
     context.lineTo(-120, -640);
     context.save();
     context.clip();
-    context.transform(-19.6429443359375, 0, 0, 19.5556640625, 1000, -659);
+    //context.transform(-19.6429443359375, 0, 0, 19.5556640625, 1000, -659);
+    context.transform(-19.6429443359375, 0, 0, 19.5556640625, 1000, -660);
     context.transform(1.0172413793103448, 0, 0, 1.0212765957446808, -0.5, -0.5);
     let pattern349 = context.createPattern(image150, 'repeat');
     context.fillStyle = pattern349;
@@ -8012,7 +8306,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, -44, 28);
     context.beginPath();
@@ -8042,7 +8337,8 @@ function drawFrame() {
     context.lineTo(-660, -140);
     context.save();
     context.clip();
-    context.transform(19.3939208984375, 0, 0, 19.375, -679, -780);
+    //context.transform(19.3939208984375, 0, 0, 19.375, -679, -780);
+    context.transform(19.3939208984375, 0, 0, 19.375, -680, -780);
     context.transform(1.0285714285714285, 0, 0, 1.0294117647058822, -0.5, -0.5);
     let pattern199 = context.createPattern(image117, 'repeat');
     context.fillStyle = pattern199;
@@ -8063,7 +8359,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -8089,7 +8385,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, -44, 28);
     context.beginPath();
@@ -8100,7 +8397,8 @@ function drawFrame() {
     context.lineTo(960, -60);
     context.save();
     context.clip();
-    context.transform(19.63623046875, 0, 0, 19.69696044921875, -139, -1380);
+    //context.transform(19.63623046875, 0, 0, 19.69696044921875, -139, -1380);
+    context.transform(19.63623046875, 0, 0, 19.69696044921875, -140, -1380);
     context.transform(1.0175438596491229, 0, 0, 1.0147058823529411, -0.5, -0.5);
     let pattern200 = context.createPattern(image118, 'repeat');
     context.fillStyle = pattern200;
@@ -8110,7 +8408,8 @@ function drawFrame() {
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, -879, 561);
+    //context.transform(1, 0, 0, 1, -879, 561);
+    context.transform(1, 0, 0, 1, -880, 560);
     context.beginPath();
     context.moveTo(800, -620);
     context.lineTo(-20, -620);
@@ -8140,7 +8439,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -8151,7 +8450,8 @@ function drawFrame() {
     context.lineTo(-120, -640);
     context.save();
     context.clip();
-    context.transform(-19.6429443359375, 0, 0, 19.5556640625, 1000, -659);
+    //context.transform(-19.6429443359375, 0, 0, 19.5556640625, 1000, -659);
+    context.transform(-19.6429443359375, 0, 0, 19.5556640625, 1000, -660);
     context.transform(1.0172413793103448, 0, 0, 1.0212765957446808, -0.5, -0.5);
     let pattern351 = context.createPattern(image150, 'repeat');
     context.fillStyle = pattern351;
@@ -8166,7 +8466,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, -44, 28);
     context.beginPath();
@@ -8196,7 +8497,8 @@ function drawFrame() {
     context.lineTo(-660, -140);
     context.save();
     context.clip();
-    context.transform(19.3939208984375, 0, 0, 19.375, -679, -780);
+    //context.transform(19.3939208984375, 0, 0, 19.375, -679, -780);
+    context.transform(19.3939208984375, 0, 0, 19.375, -680, -780);
     context.transform(1.0285714285714285, 0, 0, 1.0294117647058822, -0.5, -0.5);
     let pattern203 = context.createPattern(image117, 'repeat');
     context.fillStyle = pattern203;
@@ -8217,7 +8519,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -8243,7 +8545,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, -44, 28);
     context.beginPath();
@@ -8254,7 +8557,8 @@ function drawFrame() {
     context.lineTo(1100, -119);
     context.save();
     context.clip();
-    context.transform(19.66094970703125, 0, 0, 19.7100830078125, -80, -1499);
+    //context.transform(19.66094970703125, 0, 0, 19.7100830078125, -80, -1499);
+    context.transform(19.66094970703125, 0, 0, 19.7100830078125, -80, -1500);
     context.transform(1.0163934426229508, 0, 0, 1.0140845070422535, -0.5, -0.5);
     let pattern204 = context.createPattern(image114, 'repeat');
     context.fillStyle = pattern204;
@@ -8294,7 +8598,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, -44, 28);
     context.beginPath();
@@ -8305,7 +8609,8 @@ function drawFrame() {
     context.lineTo(-100, 20);
     context.save();
     context.clip();
-    context.transform(-19.60784912109375, 0, 0, 19.5556640625, -81, 0);
+    //context.transform(-19.60784912109375, 0, 0, 19.5556640625, -81, 0);
+    context.transform(-19.60784912109375, 0, 0, 19.5556640625, -80, 0);
     context.transform(1.0188679245283019, 0, 0, 1.0212765957446808, -0.5, -0.5);
     let pattern353 = context.createPattern(image152, 'repeat');
     context.fillStyle = pattern353;
@@ -8320,9 +8625,11 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
-    context.transform(0.05, 0, 0, 0.05, -43.95, 27.95);
+    //context.transform(0.05, 0, 0, 0.05, -43.95, 27.95);
+    context.transform(0.05, 0, 0, 0.05, -44, 28);
     context.beginPath();
     context.moveTo(1100, -1519);
     context.lineTo(1100, -179);
@@ -8331,7 +8638,8 @@ function drawFrame() {
     context.lineTo(1100, -1519);
     context.save();
     context.clip();
-    context.transform(19.60784912109375, 0, 0, 19.705810546875, 80, -1539);
+    //context.transform(19.60784912109375, 0, 0, 19.705810546875, 80, -1539);
+    context.transform(19.60784912109375, 0, 0, 19.705810546875, 80, -1540);
     context.transform(1.0188679245283019, 0, 0, 1.0142857142857142, -0.5, -0.5);
     let pattern206 = context.createPattern(image112, 'repeat');
     context.fillStyle = pattern206;
@@ -8350,7 +8658,8 @@ function drawFrame() {
     context.lineTo(120, -220);
     context.save();
     context.clip();
-    context.transform(19.3939208984375, 0, 0, 19.3939208984375, -540, -879);
+    //context.transform(19.3939208984375, 0, 0, 19.3939208984375, -540, -879);
+    context.transform(19.3939208984375, 0, 0, 19.3939208984375, -540, -880);
     context.transform(1.0285714285714285, 0, 0, 1.0285714285714285, -0.5, -0.5);
     let pattern207 = context.createPattern(image113, 'repeat');
     context.fillStyle = pattern207;
@@ -8371,7 +8680,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -8382,7 +8691,8 @@ function drawFrame() {
     context.lineTo(-500, -360);
     context.save();
     context.clip();
-    context.transform(-19.62249755859375, 0, 0, 19.45953369140625, 559, -380);
+    //context.transform(-19.62249755859375, 0, 0, 19.45953369140625, 559, -380);
+    context.transform(-19.62249755859375, 0, 0, 19.45953369140625, 560, -380);
     context.transform(1.018181818181818, 0, 0, 1.0256410256410255, -0.5, -0.5);
     let pattern354 = context.createPattern(image149, 'repeat');
     context.fillStyle = pattern354;
@@ -8397,7 +8707,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, -44, 28);
     context.beginPath();
@@ -8427,7 +8738,8 @@ function drawFrame() {
     context.lineTo(360, -319);
     context.save();
     context.clip();
-    context.transform(19.52392578125, 0, 0, 19.375, -480, -959);
+    //context.transform(19.52392578125, 0, 0, 19.375, -480, -959);
+    context.transform(19.52392578125, 0, 0, 19.375, -480, -960);
     context.transform(1.0227272727272727, 0, 0, 1.0294117647058822, -0.5, -0.5);
     let pattern209 = context.createPattern(image111, 'repeat');
     context.fillStyle = pattern209;
@@ -8448,7 +8760,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -8474,7 +8786,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -8504,7 +8817,8 @@ function drawFrame() {
     context.lineTo(560, -460);
     context.save();
     context.clip();
-    context.transform(19.58343505859375, 0, 0, 19.310302734375, -400, -1039);
+    //context.transform(19.58343505859375, 0, 0, 19.310302734375, -400, -1039);
+    context.transform(19.58343505859375, 0, 0, 19.310302734375, -400, -1040);
     context.transform(1.02, 0, 0, 1.032258064516129, -0.5, -0.5);
     let pattern211 = context.createPattern(image121, 'repeat');
     context.fillStyle = pattern211;
@@ -8525,7 +8839,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -8551,7 +8865,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -8602,7 +8917,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -8628,7 +8943,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -8658,7 +8974,8 @@ function drawFrame() {
     context.lineTo(700, -540);
     context.save();
     context.clip();
-    context.transform(19.58343505859375, 0, 0, 19.310302734375, -260, -1119);
+    //context.transform(19.58343505859375, 0, 0, 19.310302734375, -260, -1119);
+    context.transform(19.58343505859375, 0, 0, 19.310302734375, -260, -1120);
     context.transform(1.02, 0, 0, 1.032258064516129, -0.5, -0.5);
     let pattern215 = context.createPattern(image125, 'repeat');
     context.fillStyle = pattern215;
@@ -8679,7 +8996,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -8690,7 +9007,8 @@ function drawFrame() {
     context.lineTo(100, 620);
     context.save();
     context.clip();
-    context.transform(19.63623046875, 0, 0, 19.444580078125, -1000, -99);
+    //context.transform(19.63623046875, 0, 0, 19.444580078125, -1000, -99);
+    context.transform(19.63623046875, 0, 0, 19.444580078125, -1000, -100);
     context.transform(1.0175438596491229, 0, 0, 1.0263157894736843, -0.5, -0.5);
     let pattern358 = context.createPattern(image145, 'repeat');
     context.fillStyle = pattern358;
@@ -8705,7 +9023,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -8716,7 +9035,8 @@ function drawFrame() {
     context.lineTo(960, -60);
     context.save();
     context.clip();
-    context.transform(19.63623046875, 0, 0, 19.69696044921875, -139, -1380);
+    //context.transform(19.63623046875, 0, 0, 19.69696044921875, -139, -1380);
+    context.transform(19.63623046875, 0, 0, 19.69696044921875, -140, -1380);
     context.transform(1.0175438596491229, 0, 0, 1.0147058823529411, -0.5, -0.5);
     let pattern216 = context.createPattern(image118, 'repeat');
     context.fillStyle = pattern216;
@@ -8756,7 +9076,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -8782,7 +9102,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -8833,7 +9154,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -8859,7 +9180,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -8870,7 +9192,8 @@ function drawFrame() {
     context.lineTo(1100, -119);
     context.save();
     context.clip();
-    context.transform(19.66094970703125, 0, 0, 19.7100830078125, -80, -1499);
+    //context.transform(19.66094970703125, 0, 0, 19.7100830078125, -80, -1499);
+    context.transform(19.66094970703125, 0, 0, 19.7100830078125, -80, -1500);
     context.transform(1.0163934426229508, 0, 0, 1.0140845070422535, -0.5, -0.5);
     let pattern220 = context.createPattern(image114, 'repeat');
     context.fillStyle = pattern220;
@@ -8889,7 +9212,8 @@ function drawFrame() {
     context.lineTo(900, -1400);
     context.save();
     context.clip();
-    context.transform(19.310302734375, 0, 0, 19.41162109375, 320, -1419);
+    //context.transform(19.310302734375, 0, 0, 19.41162109375, 320, -1419);
+    context.transform(19.310302734375, 0, 0, 19.41162109375, 320, -1420);
     context.transform(1.032258064516129, 0, 0, 1.0277777777777777, -0.5, -0.5);
     let pattern221 = context.createPattern(image115, 'repeat');
     context.fillStyle = pattern221;
@@ -8910,7 +9234,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -8921,7 +9245,8 @@ function drawFrame() {
     context.lineTo(-100, 20);
     context.save();
     context.clip();
-    context.transform(-19.60784912109375, 0, 0, 19.5556640625, -81, 0);
+    //context.transform(-19.60784912109375, 0, 0, 19.5556640625, -81, 0);
+    context.transform(-19.60784912109375, 0, 0, 19.5556640625, -80, 0);
     context.transform(1.0188679245283019, 0, 0, 1.0212765957446808, -0.5, -0.5);
     let pattern361 = context.createPattern(image152, 'repeat');
     context.fillStyle = pattern361;
@@ -8936,7 +9261,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -8947,7 +9273,8 @@ function drawFrame() {
     context.lineTo(1100, -1519);
     context.save();
     context.clip();
-    context.transform(19.60784912109375, 0, 0, 19.705810546875, 80, -1539);
+    //context.transform(19.60784912109375, 0, 0, 19.705810546875, 80, -1539);
+    context.transform(19.60784912109375, 0, 0, 19.705810546875, 80, -1540);
     context.transform(1.0188679245283019, 0, 0, 1.0142857142857142, -0.5, -0.5);
     let pattern222 = context.createPattern(image112, 'repeat');
     context.fillStyle = pattern222;
@@ -8966,7 +9293,8 @@ function drawFrame() {
     context.lineTo(1000, -1420);
     context.save();
     context.clip();
-    context.transform(19.3939208984375, 0, 0, 19.3939208984375, 341, -1439);
+    //context.transform(19.3939208984375, 0, 0, 19.3939208984375, 341, -1439);
+    context.transform(19.3939208984375, 0, 0, 19.3939208984375, 340, -1440);
     context.transform(1.0285714285714285, 0, 0, 1.0285714285714285, -0.5, -0.5);
     let pattern223 = context.createPattern(image113, 'repeat');
     context.fillStyle = pattern223;
@@ -8987,7 +9315,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -9013,7 +9341,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -9043,7 +9372,8 @@ function drawFrame() {
     context.lineTo(1240, -1500);
     context.save();
     context.clip();
-    context.transform(19.52392578125, 0, 0, 19.375, 400, -1519);
+    //context.transform(19.52392578125, 0, 0, 19.375, 400, -1519);
+    context.transform(19.52392578125, 0, 0, 19.375, 400, -1520);
     context.transform(1.0227272727272727, 0, 0, 1.0294117647058822, -0.5, -0.5);
     let pattern225 = context.createPattern(image111, 'repeat');
     context.fillStyle = pattern225;
@@ -9064,7 +9394,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -9090,7 +9420,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -9120,7 +9451,8 @@ function drawFrame() {
     context.lineTo(1240, -1500);
     context.save();
     context.clip();
-    context.transform(19.52392578125, 0, 0, 19.375, 400, -1519);
+    //context.transform(19.52392578125, 0, 0, 19.375, 400, -1519);
+    context.transform(19.52392578125, 0, 0, 19.375, 400, -1520);
     context.transform(1.0227272727272727, 0, 0, 1.0294117647058822, -0.5, -0.5);
     let pattern227 = context.createPattern(image111, 'repeat');
     context.fillStyle = pattern227;
@@ -9141,7 +9473,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -9167,7 +9499,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -9178,7 +9511,8 @@ function drawFrame() {
     context.lineTo(520, -980);
     context.save();
     context.clip();
-    context.transform(19.59991455078125, 0, 0, 19.7222900390625, -479, -1000);
+    //context.transform(19.59991455078125, 0, 0, 19.7222900390625, -479, -1000);
+    context.transform(19.59991455078125, 0, 0, 19.7222900390625, -480, -1000);
     context.transform(1.0192307692307692, 0, 0, 1.0135135135135136, -0.5, -0.5);
     let pattern228 = context.createPattern(image126, 'repeat');
     context.fillStyle = pattern228;
@@ -9197,7 +9531,8 @@ function drawFrame() {
     context.lineTo(100, -140);
     context.save();
     context.clip();
-    context.transform(19.20013427734375, 0, 0, 19.534912109375, -399, -1000);
+    //context.transform(19.20013427734375, 0, 0, 19.534912109375, -399, -1000);
+    context.transform(19.20013427734375, 0, 0, 19.534912109375, -400, -1000);
     context.transform(1.037037037037037, 0, 0, 1.0222222222222221, -0.5, -0.5);
     let pattern229 = context.createPattern(image127, 'repeat');
     context.fillStyle = pattern229;
@@ -9218,7 +9553,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -9244,7 +9579,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -9295,7 +9631,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -9321,7 +9657,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -9372,7 +9709,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -9398,7 +9735,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -9428,7 +9766,8 @@ function drawFrame() {
     context.lineTo(-20, -1060);
     context.save();
     context.clip();
-    context.transform(19.25933837890625, 0, 0, 19.4873046875, -559, -1079);
+    //context.transform(19.25933837890625, 0, 0, 19.4873046875, -559, -1079);
+    context.transform(19.25933837890625, 0, 0, 19.4873046875, -560, -1080);
     context.transform(1.0344827586206897, 0, 0, 1.024390243902439, -0.5, -0.5);
     let pattern235 = context.createPattern(image133, 'repeat');
     context.fillStyle = pattern235;
@@ -9449,7 +9788,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -9475,7 +9814,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -9505,7 +9845,8 @@ function drawFrame() {
     context.lineTo(280, -600);
     context.save();
     context.clip();
-    context.transform(19.4873046875, 0, 0, 19.13055419921875, -500, -1059);
+    //context.transform(19.4873046875, 0, 0, 19.13055419921875, -500, -1059);
+    context.transform(19.4873046875, 0, 0, 19.13055419921875, -500, -1060);
     context.transform(1.024390243902439, 0, 0, 1.04, -0.5, -0.5);
     let pattern237 = context.createPattern(image135, 'repeat');
     context.fillStyle = pattern237;
@@ -9526,7 +9867,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -9537,7 +9878,8 @@ function drawFrame() {
     context.lineTo(581, 620);
     context.save();
     context.clip();
-    context.transform(19.71435546875, 0, 0, 19.615478515625, -819, -420);
+    //context.transform(19.71435546875, 0, 0, 19.615478515625, -819, -420);
+    context.transform(19.71435546875, 0, 0, 19.615478515625, -820, -420);
     context.transform(1.0138888888888888, 0, 0, 1.0185185185185186, -0.5, -0.5);
     let pattern369 = context.createPattern(image168, 'repeat');
     context.fillStyle = pattern369;
@@ -9552,7 +9894,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -9582,7 +9925,8 @@ function drawFrame() {
     context.lineTo(720, -600);
     context.save();
     context.clip();
-    context.transform(19.59991455078125, 0, 0, 19.04754638671875, -279, -1019);
+    //context.transform(19.59991455078125, 0, 0, 19.04754638671875, -279, -1019);
+    context.transform(19.59991455078125, 0, 0, 19.04754638671875, -280, -1020);
     context.transform(1.0192307692307692, 0, 0, 1.0434782608695652, -0.5, -0.5);
     let pattern239 = context.createPattern(image137, 'repeat');
     context.fillStyle = pattern239;
@@ -9603,7 +9947,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -9629,7 +9973,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -9640,7 +9985,8 @@ function drawFrame() {
     context.lineTo(820, 301);
     context.save();
     context.clip();
-    context.transform(19.7369384765625, 0, 0, 19.705810546875, -700, -1059);
+    //context.transform(19.7369384765625, 0, 0, 19.705810546875, -700, -1059);
+    context.transform(19.7369384765625, 0, 0, 19.705810546875, -700, -1060);
     context.transform(1.0128205128205128, 0, 0, 1.0142857142857142, -0.5, -0.5);
     let pattern240 = context.createPattern(image138, 'repeat');
     context.fillStyle = pattern240;
@@ -9659,7 +10005,8 @@ function drawFrame() {
     context.lineTo(700, -520);
     context.save();
     context.clip();
-    context.transform(19.6295166015625, 0, 0, 19.16656494140625, -380, -999);
+    //context.transform(19.6295166015625, 0, 0, 19.16656494140625, -380, -999);
+    context.transform(19.6295166015625, 0, 0, 19.16656494140625, -380, -1000);
     context.transform(1.0178571428571428, 0, 0, 1.0384615384615385, -0.5, -0.5);
     let pattern241 = context.createPattern(image139, 'repeat');
     context.fillStyle = pattern241;
@@ -9680,7 +10027,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -9691,7 +10038,8 @@ function drawFrame() {
     context.lineTo(660, 460);
     context.save();
     context.clip();
-    context.transform(19.7369384765625, 0, 0, 19.54559326171875, -860, -419);
+    //context.transform(19.7369384765625, 0, 0, 19.54559326171875, -860, -419);
+    context.transform(19.7369384765625, 0, 0, 19.54559326171875, -860, -420);
     context.transform(1.0128205128205128, 0, 0, 1.0217391304347827, -0.5, -0.5);
     let pattern371 = context.createPattern(image170, 'repeat');
     context.fillStyle = pattern371;
@@ -9706,7 +10054,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -9717,7 +10066,8 @@ function drawFrame() {
     context.lineTo(820, 361);
     context.save();
     context.clip();
-    context.transform(19.7369384765625, 0, 0, 19.705810546875, -700, -999);
+    //context.transform(19.7369384765625, 0, 0, 19.705810546875, -700, -999);
+    context.transform(19.7369384765625, 0, 0, 19.705810546875, -700, -1000);
     context.transform(1.0128205128205128, 0, 0, 1.0142857142857142, -0.5, -0.5);
     let pattern242 = context.createPattern(image140, 'repeat');
     context.fillStyle = pattern242;
@@ -9757,7 +10107,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -9783,7 +10133,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -9813,7 +10164,8 @@ function drawFrame() {
     context.lineTo(280, -240);
     context.save();
     context.clip();
-    context.transform(19.41162109375, 0, 0, 19.47357177734375, -399, -1000);
+    //context.transform(19.41162109375, 0, 0, 19.47357177734375, -399, -1000);
+    context.transform(19.41162109375, 0, 0, 19.47357177734375, -400, -1000);
     context.transform(1.0277777777777777, 0, 0, 1.025, -0.5, -0.5);
     let pattern245 = context.createPattern(image143, 'repeat');
     context.fillStyle = pattern245;
@@ -9834,7 +10186,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -9860,7 +10212,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -9890,7 +10243,8 @@ function drawFrame() {
     context.lineTo(280, -240);
     context.save();
     context.clip();
-    context.transform(19.41162109375, 0, 0, 19.47357177734375, -399, -1000);
+    //context.transform(19.41162109375, 0, 0, 19.47357177734375, -399, -1000);
+    context.transform(19.41162109375, 0, 0, 19.47357177734375, -400, -1000);
     context.transform(1.0277777777777777, 0, 0, 1.025, -0.5, -0.5);
     let pattern247 = context.createPattern(image143, 'repeat');
     context.fillStyle = pattern247;
@@ -9911,7 +10265,7 @@ function drawFrame() {
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
     //context.transform(1, 0, 0, 1, 71, 45);
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(-0.05, 0, 0, -0.05, 0, 0);
     context.beginPath();
@@ -9922,7 +10276,8 @@ function drawFrame() {
     context.lineTo(660, 460);
     context.save();
     context.clip();
-    context.transform(19.7369384765625, 0, 0, 19.54559326171875, -860, -419);
+    //context.transform(19.7369384765625, 0, 0, 19.54559326171875, -860, -419);
+    context.transform(19.7369384765625, 0, 0, 19.54559326171875, -860, -420);
     context.transform(1.0128205128205128, 0, 0, 1.0217391304347827, -0.5, -0.5);
     let pattern374 = context.createPattern(image170, 'repeat');
     context.fillStyle = pattern374;
@@ -9937,7 +10292,8 @@ function drawFrame() {
     context.save();
     context.transform(1, 0, 0, 1, 0, 0);
     context.save();
-    context.transform(1, 0, 0, 1, 71, 104.95);
+    //context.transform(1, 0, 0, 1, 71, 104.95);
+    context.transform(1, 0, 0, 1, 71, 105);
     context.save();
     context.transform(0.05, 0, 0, 0.05, 0, 0);
     context.beginPath();
@@ -9948,7 +10304,8 @@ function drawFrame() {
     context.lineTo(820, 361);
     context.save();
     context.clip();
-    context.transform(19.7369384765625, 0, 0, 19.705810546875, -700, -999);
+    //context.transform(19.7369384765625, 0, 0, 19.705810546875, -700, -999);
+    context.transform(19.7369384765625, 0, 0, 19.705810546875, -700, -1000);
     context.transform(1.0128205128205128, 0, 0, 1.0142857142857142, -0.5, -0.5);
     let pattern248 = context.createPattern(image140, 'repeat');
     context.fillStyle = pattern248;
