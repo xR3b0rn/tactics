@@ -284,6 +284,14 @@ function mock_canvas_context(dom, canvas, id) {
       context.quadraticCurveTo(cpx, cpy, x, y);
     },
 
+    setTransform: function (sx, rx, ry, sy, tx, ty) {
+      let transform = [sx, rx, ry, sy, tx, ty];
+
+      print_transcript('%s.setTransform(%s, %s, %s, %s, %s, %s);', id, ...transform);
+
+      this._transform = transform;
+      context.setTransform(...transform);
+    },
     transform: function (sx, rx, ry, sy, tx, ty) {
       let transform = [sx, rx, ry, sy, tx, ty];
 
@@ -294,8 +302,6 @@ function mock_canvas_context(dom, canvas, id) {
         // Testing equality of decimal numbers may be problematic, test strings.
         let str_sx = Math.abs(this._worldTransform[0]).toString();
         let str_sy = Math.abs(this._worldTransform[3]).toString();
-        //if (frame_index === 39)
-        //  console.log(transform, this._transform, str_sx, str_sy);
 
         if (str_sx === '1' && str_sy === '1') {
           // If decimal values are very close to rounded integer values, then use
@@ -388,6 +394,53 @@ function mock_canvas_context(dom, canvas, id) {
 
       return gradient;
     },
+    set strokeStyle(value) {
+      if (typeof value === 'string') {
+        print_transcript("%s.strokeStyle = '%s';", id, value);
+      }
+      else {
+        print_transcript('// Warning: The following line may be malformed');
+        print_transcript('%s.strokeStyle = %s;', id, value);
+      }
+
+      context.strokeStyle = value;
+    },
+    get lineWidth() {
+      return context.lineWidth;
+    },
+    set lineWidth(value) {
+      if (typeof value === 'number') {
+        print_transcript("%s.lineWidth = %s;", id, value);
+      }
+      else {
+        print_transcript('// Warning: The following line may be malformed');
+        print_transcript('%s.lineWidth = %s;', id, value);
+      }
+
+      context.lineWidth = value;
+    },
+    set lineCap(value) {
+      if (typeof value === 'string') {
+        print_transcript("%s.lineCap = '%s';", id, value);
+      }
+      else {
+        print_transcript('// Warning: The following line may be malformed');
+        print_transcript('%s.lineCap = %s;', id, value);
+      }
+
+      context.lineCap = value;
+    },
+    set lineJoin(value) {
+      if (typeof value === 'string') {
+        print_transcript("%s.lineJoin = '%s';", id, value);
+      }
+      else {
+        print_transcript('// Warning: The following line may be malformed');
+        print_transcript('%s.lineJoin = %s;', id, value);
+      }
+
+      context.lineJoin = value;
+    },
     set fillStyle(value) {
       if (typeof value === 'string') {
         if (value === '#000000') {
@@ -426,6 +479,17 @@ function mock_canvas_context(dom, canvas, id) {
       return this._fillStyle = value;
     },
 
+    stroke: function (path) {
+      if (path) {
+        print_transcript('// Warning: The following line may be malformed');
+        print_transcript('%s.stroke(%s);', id, path);
+        context.stroke(path);
+      }
+      else {
+        print_transcript('%s.stroke();', id);
+        context.stroke();
+      }
+    },
     fill: () => {
       print_transcript('%s.fill();', id);
       context.fill();
@@ -530,18 +594,17 @@ function mock_canvas_context(dom, canvas, id) {
       return transform;
     },
 
-    // Additional properties defined by canvas.js
-    set _matrix(value) {
-      //console.log(id, 'set', '_matrix', value);
-      return this.__matrix = value;
-    },
+    // Additional members defined by canvas.js
+    _matrix: undefined,
+    _savedMatrices: undefined,
 
-    get _savedMatrices() {
-      return this.__savedMatrices;
-    },
-    set _savedMatrices(value) {
-      //console.log(id, 'set', '_savedMatrices', value);
-      return this.__savedMatrices = value;
+    applyTransformToPoint: function (p) {
+      print_transcript('//%s.applyTransformToPoint({x:%s, y:%s});', id, p.x, p.y);
+
+      let ret = {};
+      ret.x = this._matrix[0] * p.x + this._matrix[2] * p.y + this._matrix[4];
+      ret.y = this._matrix[1] * p.x + this._matrix[3] * p.y + this._matrix[5];
+      return ret;
     },
   });
 
