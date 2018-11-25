@@ -1,28 +1,29 @@
 const path = require('path');
+const CLIENT_PATH = path.resolve(__dirname, 'src', 'client');
 
 module.exports = {
   mode: process.env.NODE_ENV,
   entry: {
-    tactics: path.resolve(__dirname, 'src', 'tactics.js'),
-    'faceoff-app': path.resolve(__dirname, 'src', 'faceoff-app.js'),
-    'chaos-app': path.resolve(__dirname, 'src', 'chaos-app.js'),
-    'classic-app': path.resolve(__dirname, 'src', 'classic-app.js'),
+    tactics: path.join(CLIENT_PATH, 'tactics.js'),
+    'faceoff-app': path.join(CLIENT_PATH, 'faceoff-app.js'),
+    'chaos-app': path.join(CLIENT_PATH, 'chaos-app.js'),
+    'classic-app': path.join(CLIENT_PATH, 'classic-app.js'),
   },
   module: {
     rules: [
       {
         test: /\.css$/,
         use: [
-          { loader: 'style-loader' },
-          { loader: 'css-loader', options: { url: false } }
+          {loader: 'style-loader'},
+          {loader: 'css-loader', options: {url: false}}
         ]
       },
       {
         test: /\.scss$/,
         use: [
-          { loader: 'style-loader' },
-          { loader: 'css-loader', options: { url: false } },
-          { loader: 'sass-loader' }
+          {loader: 'style-loader'},
+          {loader: 'css-loader', options: {url: false}},
+          {loader: 'sass-loader'}
         ]
       }
     ]
@@ -36,11 +37,11 @@ module.exports = {
   },
   resolve: {
     alias: {
-      tactics: path.resolve(__dirname, 'src', 'tactics'),
-      util: path.resolve(__dirname, 'src', 'util'),
+      tactics: path.join(CLIENT_PATH, 'tactics'),
+      util: path.join(CLIENT_PATH, 'util'),
       lib: path.resolve(__dirname, 'lib'),
     }
   },
   devtool: process.env.NODE_ENV === 'production' ? false : 'eval-source-map',
-  performance: { hints: false },
+  performance: {hints: false},
 };
