@@ -14,14 +14,27 @@ npm config set script-shell "C:\\Program Files\\Git\\bin\\bash.exe"
 ```
 
 ## Development
-After checking out the Git repository, run these commands.
+To get a local instance of the game up-and-running, follow the setups outlined below.
+
+Create the env/* files from the examples.
 
 ```bash
-$ npm install
-$ npm start
+cp env/server.example.json env/server.json
+cp env/common.example.json env/common.json
 ```
 
-The start command will output a URL that can be used to run the game and build JavaScript bundles for use by that URL.  The command will continue to monitor source files and rebuild the bundles as changes are made.
+Create a MySQL database, then update the details inside the env/server.json file.
+
+Finally run the following.
+
+```bash
+make install
+make dev -j2
+```
+
+Open up [http://localhost:3000](http://localhost:3000) in your browser to see the game running.
+
+Any time you make changes to the server or assets code, the changes will be compiled and you can reload your browser to see them.
 
 ## Contributing
 Pull requests are encouraged. For major changes, please open an issue first to discuss what you would like to change.

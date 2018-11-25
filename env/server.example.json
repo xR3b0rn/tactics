@@ -1,0 +1,9 @@
+{
+  "key": null,
+  "port": 3000,
+  "dbDialect": "mysql",
+  "dbName": "tactics",
+  "dbUsername": null,
+  "dbPassword": null,
+  "dbHost": "127.0.0.1"
+}
